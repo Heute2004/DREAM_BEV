@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Development-only route-closure controls. Panel A composes the same frozen forced-route outputs under the protected visual replay; warm-up frames use exact radar identity. The static mixture evaluates all five experts, whereas the learned and fixed policies activate one expert. Panel B is radar-only and compares the routed heterogeneous pool with universal experts matched to its mean active capacity or complete stored-bank capacity. Panel C evaluates stitched route transitions without resetting the causal radar window or expert state; stable metrics begin after the delayed route becomes available. Route-macro AP@0.30 averages the five protocol routes equally.}
+\label{tab:route-closure}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccrrr}
+\toprule
+Configuration & Active experts/params & Expert-bank params & AP@0.30 & Route-macro AP@0.30 & P90 (m) \\
+\midrule
+\multicolumn{6}{l}{\emph{A. Frozen route-allocation controls with protected visual evidence}} \\
+Best fixed route & 1 expert & 363,248 & 0.7546 & 0.7780 & 0.4384 \\
+Static uniform five-expert mixture & 5 experts & 363,248 & 0.7700 & 0.7944 & \textbf{0.4132} \\
+\textbf{Learned causal route} & \textbf{1 expert} & 363,248 & \textbf{0.7742} & \textbf{0.7963} & 0.4273 \\
+\midrule
+\multicolumn{6}{l}{\emph{B. Radar-only heterogeneous pool versus matched universal experts}} \\
+Universal expert, active-capacity matched & 72,652 & 72,652 & 0.7467 & 0.7741 & \textbf{0.4247} \\
+Universal expert, bank-capacity matched & 363,253 & 363,253 & 0.7535 & 0.7775 & 0.4291 \\
+\textbf{Routed heterogeneous expert pool} & \textbf{72,650} & \textbf{363,248} & \textbf{0.7617} & \textbf{0.7863} & 0.4350 \\
+\midrule
+\multicolumn{6}{l}{\emph{C. Stitched no-reset causal route-transition diagnostic}} \\
+Configuration & Switch success & Latency (frames) & Overall AP@0.30 & Stable AP@0.30 & Stable P90 (m) \\
+\textbf{Learned delayed route} & \textbf{20/20} & 33.5 & 0.7626 & \textbf{0.7951} & 0.3513 \\
+Ledger-delayed route & 20/20 & 32.0 & 0.7625 & 0.7950 & 0.3513 \\
+Ledger-instant upper bound & 20/20 & 0.0 & \textbf{0.7864} & 0.7950 & 0.3513 \\
+Best fixed expert & 4/20 & -- & 0.7676 & 0.7588 & \textbf{0.3512} \\
+\bottomrule
+\end{tabular}}
+\end{table*}

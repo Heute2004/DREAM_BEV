@@ -1,0 +1,35 @@
+{
+  "status": "frozen",
+  "method": "DREAM-BEV (Ours)",
+  "selection_scope": "user-approved final selection from the uniform common-contract Development search",
+  "training_hyperparameters": {
+    "learning_rate": 0.000375,
+    "weight_decay": 0.00015
+  },
+  "common_contract": {
+    "input": "RA + RA-MTI, causal eight-frame history [t-7,t]",
+    "target": "one-person 200x234 metric BEV confidence map",
+    "frame_loss_weights": {
+      "background": 0.02,
+      "car_or_cyclist_hard_negative": 0.75,
+      "pedestrian_positive": 2.0
+    },
+    "positive_resampling": false,
+    "seed": 3407,
+    "batch_size": 8,
+    "patience": 4,
+    "locked_test_read": false,
+    "protocol_sha256": "1ca4d2aa5418b1120e84e80bf2794517ad177b1e9e6b8a1a3dc7cfc6515542f1"
+  },
+  "independent_reload_development_metrics": {
+    "AP@0.25": 0.1558365662100498,
+    "AP@0.30": 0.23413432242316284,
+    "AP@0.50": 0.41780366784344247,
+    "AP@0.75": 0.5487298491542217,
+    "AP@1.00": 0.6029841064021637,
+    "mean_error_m": 2.3316400051116943,
+    "P90_error_m": 7.297727584838867
+  },
+  "checkpoint_sha256": "2ff970fd1252fd84170913fbbf69444622eee4a863be1e36f331a8fd4f820616",
+  "authoritative_remote_artifact": "/data_hard_driver/hyc/Radar+RIS/runs/CARRADA_DREAM_BEV_POSTFREEZE_REFINEMENT_20260814/J_lr3p75e4_wd1p5e4"
+}

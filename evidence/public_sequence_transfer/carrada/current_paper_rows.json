@@ -1,0 +1,71 @@
+{
+  "scope": "Current manuscript CARRADA table; 496 scored Development frames",
+  "dedicated_locked_test": false,
+  "source_comparison_sha256": "4743978c839c6ead6b14989a3d12f94eb192a81ac68e88d6a2c451681d4a95d5",
+  "core_source_audit_filename": "DIRECT_PRIVATE_ERODNET_REUSE_AUDIT.md",
+  "core_source_audit_sha256": "e73147612c4f07e5a83f7c21a24847c4aa1e6060c98fae7ff056f17ba1079b1c",
+  "core_checkpoint_sha256": "f29c62821bcf521baa97b698b78ba88dcb08b29bc3bb3c214e90ca396585717f",
+  "note": "The source audit's old inclusion-status prose is superseded by the current manuscript table, not by changes to its numerical results. Full-precision core predictions are not included in this local release.",
+  "rows": [
+    {
+      "method": "DREAM-BEV",
+      "parameters": 1202785,
+      "precision": "full archived precision",
+      "AP@0.25": 0.1558365662100498,
+      "AP@0.30": 0.23413432242316284,
+      "AP@0.50": 0.41780366784344247,
+      "AP@0.75": 0.5487298491542217,
+      "AP@1.00": 0.6029841064021637,
+      "mean_error_m": 2.3316400051116943,
+      "P90_error_m": 7.297727584838867
+    },
+    {
+      "method": "RODNet-CDC-adapted",
+      "parameters": 34506434,
+      "precision": "full archived precision",
+      "AP@0.25": 0.14241556330985264,
+      "AP@0.30": 0.20069934530773664,
+      "AP@0.50": 0.31513100902546565,
+      "AP@0.75": 0.3785881469395933,
+      "AP@1.00": 0.45401170421388354,
+      "mean_error_m": 3.7038958072662354,
+      "P90_error_m": 12.551860809326172
+    },
+    {
+      "method": "RODNet-HG-adapted",
+      "parameters": 64800802,
+      "precision": "full archived precision",
+      "AP@0.25": 0.01617743521276548,
+      "AP@0.30": 0.02394154047186752,
+      "AP@0.50": 0.059830254538743737,
+      "AP@0.75": 0.13040249030333473,
+      "AP@1.00": 0.16826426305475434,
+      "mean_error_m": 4.512383460998535,
+      "P90_error_m": 11.152666091918945
+    },
+    {
+      "method": "E-RODNet-core-adapted",
+      "parameters": 1311137,
+      "precision": "four-decimal source-audit transcription",
+      "AP@0.25": 0.1134,
+      "AP@0.30": 0.1732,
+      "AP@0.50": 0.3946,
+      "AP@0.75": 0.5575,
+      "AP@1.00": 0.616,
+      "mean_error_m": 2.0188,
+      "P90_error_m": 6.4875
+    },
+    {
+      "method": "FCN-8s-adapted",
+      "parameters": 134273187,
+      "precision": "full archived precision",
+      "AP@0.25": 0.01033994163514923,
+      "AP@0.30": 0.024609628316964047,
+      "AP@0.50": 0.05425617975145766,
+      "AP@0.75": 0.08711459146961179,
+      "AP@1.00": 0.1613165918809339,
+      "mean_error_m": 4.9176201820373535,
+      "P90_error_m": 13.310441970825195
+    }
+  ]
+}

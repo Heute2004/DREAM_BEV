@@ -1,0 +1,303 @@
+{
+  "protocol": "IF-only Development no-reset route-transition evaluation",
+  "locked_test_used": false,
+  "episodes": 20,
+  "scored_frames": 5984,
+  "radar_clip_length": 16,
+  "boundary_frame": 150,
+  "availability_delay_frames": 32,
+  "causal_state_reset_at_boundary": false,
+  "future_policy_access": false,
+  "arms": {
+    "learned_delayed": {
+      "overall": {
+        "frames": 5984.0,
+        "ap_0p25m": 0.6382515336444203,
+        "ap_0p3m": 0.7625724962013998,
+        "ap_0p5m": 0.9025470674170699,
+        "ap_ols_0p5": 0.9377625887240484,
+        "mean_ols": 0.9239813568094501,
+        "mean_location_error_m": 0.3679443336930054,
+        "median_location_error_m": 0.16971786331314948,
+        "p90_location_error_m": 0.41001857038876044
+      },
+      "windows": {
+        "pre_transition": {
+          "frames": 3000.0,
+          "ap_0p25m": 0.723405786214543,
+          "ap_0p3m": 0.8381943964590135,
+          "ap_0p5m": 0.9641400186827912,
+          "ap_ols_0p5": 0.9927550078936733,
+          "mean_ols": 0.9604116015405754,
+          "mean_location_error_m": 0.20073856323147482,
+          "median_location_error_m": 0.15937923268451656,
+          "p90_location_error_m": 0.32140253742418967
+        },
+        "transition_pending": {
+          "frames": 640.0,
+          "ap_0p25m": 0.23489561875423554,
+          "ap_0p3m": 0.3428692455618228,
+          "ap_0p5m": 0.4440076206793857,
+          "ap_ols_0p5": 0.4926924535137708,
+          "mean_ols": 0.5975813744223641,
+          "mean_location_error_m": 1.7665531452997025,
+          "median_location_error_m": 0.29745914944217755,
+          "p90_location_error_m": 5.703395840747431
+        },
+        "post_transition_stable": {
+          "frames": 2344.0,
+          "ap_0p25m": 0.6590100865036446,
+          "ap_0p3m": 0.7950550320782294,
+          "ap_0p5m": 0.955549844930761,
+          "ap_ols_0p5": 0.9945541764821156,
+          "mean_ols": 0.9664750660817878,
+          "mean_location_error_m": 0.20007218009074676,
+          "median_location_error_m": 0.16762704146967358,
+          "p90_location_error_m": 0.3512741795568626
+        }
+      },
+      "route_accuracy": 0.7760695187165776,
+      "switch_success_episodes": 20,
+      "switch_failure_episodes": 0,
+      "switch_latency_frames_mean": 33.5,
+      "switch_latency_frames_all": [
+        32,
+        62,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    "oracle_delayed": {
+      "overall": {
+        "frames": 5984.0,
+        "ap_0p25m": 0.6382075099232347,
+        "ap_0p3m": 0.7625439720283181,
+        "ap_0p5m": 0.9025294533575601,
+        "ap_ols_0p5": 0.9377465109730173,
+        "mean_ols": 0.923982747543862,
+        "mean_location_error_m": 0.3679158241582566,
+        "median_location_error_m": 0.16971786331314948,
+        "p90_location_error_m": 0.41001857038876044
+      },
+      "windows": {
+        "pre_transition": {
+          "frames": 3000.0,
+          "ap_0p25m": 0.7233639550976809,
+          "ap_0p3m": 0.8381748518547993,
+          "ap_0p5m": 0.9641359471303951,
+          "ap_ols_0p5": 0.9927545520250467,
+          "mean_ols": 0.9604129885663621,
+          "mean_location_error_m": 0.20071012972215196,
+          "median_location_error_m": 0.15937923268451656,
+          "p90_location_error_m": 0.32140253742418967
+        },
+        "transition_pending": {
+          "frames": 640.0,
+          "ap_0p25m": 0.23489561875423554,
+          "ap_0p3m": 0.3428692455618228,
+          "ap_0p5m": 0.4440076206793857,
+          "ap_ols_0p5": 0.4926924535137708,
+          "mean_ols": 0.5975813744223641,
+          "mean_location_error_m": 1.7665531452997025,
+          "median_location_error_m": 0.29745914944217755,
+          "p90_location_error_m": 5.703395840747431
+        },
+        "post_transition_stable": {
+          "frames": 2344.0,
+          "ap_0p25m": 0.6589854130328998,
+          "ap_0p3m": 0.7950243245124036,
+          "ap_0p5m": 0.9555437609208821,
+          "ap_ols_0p5": 0.9945496102416135,
+          "mean_ols": 0.9664768412854395,
+          "mean_location_error_m": 0.2000357890805213,
+          "median_location_error_m": 0.16762704146967358,
+          "p90_location_error_m": 0.3512741795568626
+        }
+      },
+      "route_accuracy": 0.786096256684492,
+      "switch_success_episodes": 20,
+      "switch_failure_episodes": 0,
+      "switch_latency_frames_mean": 32.0,
+      "switch_latency_frames_all": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    "oracle_instant": {
+      "overall": {
+        "frames": 5984.0,
+        "ap_0p25m": 0.6699673101636032,
+        "ap_0p3m": 0.7864167596756582,
+        "ap_0p5m": 0.9206933733943087,
+        "ap_ols_0p5": 0.9520959003376674,
+        "mean_ols": 0.9349545551893994,
+        "mean_location_error_m": 0.33354675633324454,
+        "median_location_error_m": 0.16421109254036007,
+        "p90_location_error_m": 0.37915901288503273
+      },
+      "windows": {
+        "pre_transition": {
+          "frames": 3000.0,
+          "ap_0p25m": 0.7539830857512475,
+          "ap_0p3m": 0.8557970813856149,
+          "ap_0p5m": 0.96898325873006,
+          "ap_ols_0p5": 0.9970797438669149,
+          "mean_ols": 0.967708490253139,
+          "mean_location_error_m": 0.18088831046705808,
+          "median_location_error_m": 0.1533551918055208,
+          "p90_location_error_m": 0.3100287277048886
+        },
+        "transition_pending": {
+          "frames": 640.0,
+          "ap_0p25m": 0.3604811196211007,
+          "ap_0p3m": 0.4527118496426396,
+          "ap_0p5m": 0.568160439730681,
+          "ap_ols_0p5": 0.5915172287985766,
+          "mean_ols": 0.6659701117513717,
+          "mean_location_error_m": 1.5381171388940929,
+          "median_location_error_m": 0.24358834014422162,
+          "p90_location_error_m": 5.306277379816904
+        },
+        "post_transition_stable": {
+          "frames": 2344.0,
+          "ap_0p25m": 0.6589854130328998,
+          "ap_0p3m": 0.7950241950277328,
+          "ap_0p5m": 0.9555437609208821,
+          "ap_ols_0p5": 0.9945496102416135,
+          "mean_ols": 0.9664768412854395,
+          "mean_location_error_m": 0.2000357890805213,
+          "median_location_error_m": 0.16762704146967358,
+          "p90_location_error_m": 0.3512741795568626
+        }
+      },
+      "route_accuracy": 1.0,
+      "switch_success_episodes": 20,
+      "switch_failure_episodes": 0,
+      "switch_latency_frames_mean": 0.0,
+      "switch_latency_frames_all": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "best_fixed": {
+      "overall": {
+        "frames": 5984.0,
+        "ap_0p25m": 0.5924362267193335,
+        "ap_0p3m": 0.7676428836842548,
+        "ap_0p5m": 0.9223588220654271,
+        "ap_ols_0p5": 0.9554441446072397,
+        "mean_ols": 0.925741741794885,
+        "mean_location_error_m": 0.34701587108699256,
+        "median_location_error_m": 0.17554620834029291,
+        "p90_location_error_m": 0.37986992928559327
+      },
+      "windows": {
+        "pre_transition": {
+          "frames": 3000.0,
+          "ap_0p25m": 0.6977441158098503,
+          "ap_0p3m": 0.8439236717033884,
+          "ap_0p5m": 0.9649798159496478,
+          "ap_ols_0p5": 0.9934637434744684,
+          "mean_ols": 0.9570448277300423,
+          "mean_location_error_m": 0.20268123562336576,
+          "median_location_error_m": 0.16325520600955362,
+          "p90_location_error_m": 0.31097770805502023
+        },
+        "transition_pending": {
+          "frames": 640.0,
+          "ap_0p25m": 0.3221932204438086,
+          "ap_0p3m": 0.480178500933308,
+          "ap_0p5m": 0.6055764097033199,
+          "ap_ols_0p5": 0.6240327376958971,
+          "mean_ols": 0.6687690889880595,
+          "mean_location_error_m": 1.5128728574500883,
+          "median_location_error_m": 0.25566359278669115,
+          "p90_location_error_m": 5.306277379816904
+        },
+        "post_transition_stable": {
+          "frames": 2344.0,
+          "ap_0p25m": 0.5489198409311297,
+          "ap_0p3m": 0.7588326630057406,
+          "ap_0p5m": 0.9543329333537116,
+          "ap_ols_0p5": 0.9972151124261774,
+          "mean_ols": 0.9558412469104551,
+          "mean_location_error_m": 0.21342177344130098,
+          "median_location_error_m": 0.1828071608424963,
+          "p90_location_error_m": 0.3511735861899202
+        }
+      },
+      "route_accuracy": 0.19786096256684493,
+      "switch_success_episodes": 4,
+      "switch_failure_episodes": 16,
+      "switch_latency_frames_mean": 0.0,
+      "switch_latency_frames_all": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "source_sha256": {
+    "manifest": "40b566dbe418383ddb465a79c3ee796ebe4f975546f2d5a001b0ee1af6b63273",
+    "schedule": "eca1cbf2153efa7be12fd6c0e476a35b7750a8445d6968a939032d840730cc08",
+    "base_checkpoint": "63892671fb4575d4b26aaf2bf60fe43b9f45110c124fdd4ebe801baa23f46d0e",
+    "expert_open_indoor_los": "25e9f63855405e9d624d81bcf16fa51d4b757562019692bae9404f369267bf39",
+    "expert_indoor_clutter": "1485fc99f6c4a1edfabe509b7eb8461e570c72f8f6d00fd7a86963e8bdb45e77",
+    "expert_open_outdoor_weak_return": "56b750782cc5a8268e5efabb5258e099c08805606f912eb2189e18586d30d763",
+    "expert_outdoor_dry_complex": "7201d2be1f53c09dbc4dcff3e53b641aeffc988c2311883708257b4d32ca3328",
+    "expert_outdoor_wet_return": "4ab9dab0a60aec504e001180d7de292e1372fb427d5b03bed5d6ce06d444c864"
+  }
+}

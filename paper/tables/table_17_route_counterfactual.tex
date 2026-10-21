@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Expert cross-evaluation on Development (AP@0.30). Columns force a specialist while holding the radar anchor, visual evidence, policy timing and eligibility, guard, and evaluator fixed. Rows use sequence-level route labels. Bold marks each row's best result; the margin is relative to its best off-diagonal expert. The pre-defined grouping includes 8,881 frames with a named route and excludes 1,088 unresolved-route frames.}
+\label{tab:route-counterfactual}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Ledger route & CLOR & TECS & LTGE-CEN & PB-MHBR & GG-SRRE & Diagonal margin (pp) & Frames \\
+\midrule
+Open-indoor LOS & \textbf{0.9762} & 0.9491 & 0.9453 & 0.9546 & 0.9332 & +2.16 & 1,876 \\
+Indoor clutter & 0.9483 & \textbf{0.9593} & 0.9487 & 0.9523 & 0.9410 & +0.70 & 804 \\
+Open-outdoor weak-return & 0.7479 & 0.7453 & \textbf{0.8145} & 0.7431 & 0.7516 & +6.29 & 1,950 \\
+Outdoor dry-complex & 0.6022 & 0.6038 & 0.6008 & \textbf{0.6358} & 0.6248 & +1.10 & 804 \\
+Outdoor wet-return & 0.6335 & 0.6347 & 0.6329 & 0.6158 & \textbf{0.6584} & +2.36 & 3,447 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

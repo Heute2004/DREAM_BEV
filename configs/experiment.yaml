@@ -1,0 +1,31 @@
+manifest: contracts/frame_manifest.csv
+sequence_split: contracts/sequence_split.csv
+policy_schedule: contracts/policy_schedule.json
+radar:
+  input_channels: [RA, RA-MTI]
+  clip_length: 16
+  output: BEV
+vision:
+  input: RGB
+  clip_length: 8
+  predicts: bearing_only
+  depth_at_runtime: false
+fusion:
+  core: candidate_local_posterior
+  preserves_radar_h_forward_coordinate: true
+  lateral_radius_m: 0.5
+  lattice_step_m: 0.025
+  candidate_count: 41
+  candidate_local_reads: true
+  exact_no_op_candidate: true
+  fallback: exact_radar_identity
+  causal_consistency_guard:
+    ema_alpha: 0.10
+    ema_threshold: 0.50
+    calibration_split: Train
+policy:
+  input: current_RGB_only
+  capture_interval_frames: 30
+  availability_delay_frames: 32
+  hold_frames: 30
+  initial_mode: radar_identity

@@ -1,0 +1,88 @@
+{
+  "scope": "Train-only frozen causal guard calibration",
+  "ema_alpha": 0.1,
+  "thresholds": [
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "minimum_clean_gain": 0.01,
+  "radar_clean_ap30": 0.8778898613296405,
+  "radar_bias_ap30": 0.8778898613296405,
+  "selected_threshold": 0.5,
+  "rows": [
+    {
+      "threshold": 0.4,
+      "clean_ap30": 0.8866031427950736,
+      "bias_ap30": 0.8785791649765146,
+      "clean_p90_m": 0.2866683304309845,
+      "bias_p90_m": 0.2934885025024414,
+      "clean_visual_acceptance": 0.3796743182264077,
+      "bias_visual_acceptance": 0.02691779478124387
+    },
+    {
+      "threshold": 0.5,
+      "clean_ap30": 0.888758036123175,
+      "bias_ap30": 0.8783231486092047,
+      "clean_p90_m": 0.28431573510169983,
+      "bias_p90_m": 0.29363900423049927,
+      "clean_visual_acceptance": 0.4517559348636453,
+      "bias_visual_acceptance": 0.03543260741612713
+    },
+    {
+      "threshold": 0.6,
+      "clean_ap30": 0.889916450374095,
+      "bias_ap30": 0.878219292560424,
+      "clean_p90_m": 0.2825658917427063,
+      "bias_p90_m": 0.2938741147518158,
+      "clean_visual_acceptance": 0.5094761624484991,
+      "bias_visual_acceptance": 0.0439474200510104
+    },
+    {
+      "threshold": 0.7,
+      "clean_ap30": 0.8923536630026356,
+      "bias_ap30": 0.8783000354681079,
+      "clean_p90_m": 0.2807713747024536,
+      "bias_p90_m": 0.2938741147518158,
+      "clean_visual_acceptance": 0.5543260741612713,
+      "bias_visual_acceptance": 0.052266038846380224
+    },
+    {
+      "threshold": 0.8,
+      "clean_ap30": 0.894290130759195,
+      "bias_ap30": 0.8784376453899121,
+      "clean_p90_m": 0.279276043176651,
+      "bias_p90_m": 0.29367053508758545,
+      "clean_visual_acceptance": 0.5910535609181872,
+      "bias_visual_acceptance": 0.06199725328624681
+    },
+    {
+      "threshold": 0.9,
+      "clean_ap30": 0.896265703007808,
+      "bias_ap30": 0.8783024577415971,
+      "clean_p90_m": 0.27774664759635925,
+      "bias_p90_m": 0.2939089834690094,
+      "clean_visual_acceptance": 0.6138512850696488,
+      "bias_visual_acceptance": 0.07239552678045909
+    },
+    {
+      "threshold": 1.0,
+      "clean_ap30": 0.8978185443129852,
+      "bias_ap30": 0.8781001401076094,
+      "clean_p90_m": 0.2762030065059662,
+      "bias_p90_m": 0.29421311616897583,
+      "clean_visual_acceptance": 0.6305670001961938,
+      "bias_visual_acceptance": 0.08389248577594663
+    }
+  ],
+  "inputs": {
+    "policy_causal_replay": "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_ConsistencyGuard_20260815/canonical_train_guard_clean_causal/causal_policy_reference/causal_guard_replay.csv",
+    "clean_evidence_audit": "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_ConsistencyGuard_20260815/canonical_train_guard_clean_causal/evaluation/bearing_bias/acceptance_audit.csv",
+    "bias_evidence_audit": "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_ConsistencyGuard_20260815/canonical_train_guard_bias5_causal_clean/evaluation/bearing_bias/acceptance_audit.csv",
+    "manifest": "/data_hard_driver/hyc/Radar+RIS/Radar_RIS_VLM_20260724/Dataset_V1/M0_RadarDataset_Lockbox_V3_20260801/m0_base_train_dev_frame_manifest_v3.csv"
+  }
+}

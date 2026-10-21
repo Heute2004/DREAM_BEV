@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Locked fixed-checkpoint comparison (eight sequences; 2,400 frames). Public rows are Development-selected task adaptations of source-backed fusion cores using the shared five-expert radar anchor and RGB evidence, evaluated without retuning.}
+\label{tab:posthoc-locked-fusion}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Configuration & AP@0.25 & AP@0.30 & AP@0.50 & Mean error (m) & P90 (m) \\
+\midrule
+Condition-routed expert-radar anchor & 0.6816 & 0.7992 & 0.9876 & 0.1884 & 0.3228 \\
+RC-ROSNet FusionModule adapted & 0.6518 & 0.7741 & 0.9872 & 0.1943 & 0.3388 \\
+CRN MFA adapted & 0.6391 & 0.7783 & \textbf{0.9892} & 0.1919 & 0.3302 \\
+RCBEVDet CAMF adapted & 0.5457 & 0.7114 & 0.9761 & 0.2070 & 0.3646 \\
+\midrule
+\Method{} (Ours, protected) & \textbf{0.7162} & \textbf{0.8359} & 0.9881 & \textbf{0.1798} & \textbf{0.3081} \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

@@ -1,0 +1,56 @@
+{
+  "contract": "frozen paper-contract RVFusion with causal cross-modal consistency guard; preserved expert Radar-H forward coordinate; no retraining; no official CRUW test",
+  "protocol_split": "development",
+  "official_test_read": false,
+  "frame_count": 1074,
+  "expert_radar": {
+    "frame_count": 1074.0,
+    "mean_error_m": 1.0985229015350342,
+    "median_error_m": 0.19453296065330505,
+    "P90_error_m": 0.742149829864502,
+    "AP@0.25": 0.5805560630363205,
+    "AP@0.30": 0.7172258279076317,
+    "AP@0.50": 0.8605966104113427,
+    "AP@0.75": 0.8969804570593615,
+    "AP@1.00": 0.9104299123228092
+  },
+  "rvfusion_unguarded": {
+    "frame_count": 1074.0,
+    "mean_error_m": 1.0930118560791016,
+    "median_error_m": 0.18896643817424774,
+    "P90_error_m": 0.7392189502716064,
+    "AP@0.25": 0.5987621507920566,
+    "AP@0.30": 0.7349337494885501,
+    "AP@0.50": 0.8602825904616818,
+    "AP@0.75": 0.8980174670641441,
+    "AP@1.00": 0.9104299123228092
+  },
+  "rvfusion_guarded": {
+    "frame_count": 1074.0,
+    "mean_error_m": 1.0935901403427124,
+    "median_error_m": 0.18899178504943848,
+    "P90_error_m": 0.7392189502716064,
+    "AP@0.25": 0.5988606653514823,
+    "AP@0.30": 0.7315693508336464,
+    "AP@0.50": 0.8602825904616818,
+    "AP@0.75": 0.8980174670641441,
+    "AP@1.00": 0.9104299123228092
+  },
+  "delta_guarded_vs_expert_AP@0.30_pp": 1.4343522926014707,
+  "guard": {
+    "ema_alpha": 0.1,
+    "ema_threshold": 0.8,
+    "posterior_admission_rate": 0.1527001862197393,
+    "visual_acceptance_rate": 0.13500931098696461,
+    "identity_fallback_rate": 0.8649906890130353,
+    "improved_fraction": 0.09124767225325885,
+    "harmed_fraction": 0.043761638733705775
+  },
+  "input_sha256": {
+    "anchor": "16aca57e48a6bcf98594d904e59640010dd83bac3e9d7da141842a621b0fd48a",
+    "expert": "2deac744e9c03c333e142670c272a1791cda7116a50eb134305aa24406406fa2",
+    "visual": "b6b4a0674a776cef2747a69b004bb4421dcc04659bbe62d2a0681445c847ae15",
+    "fusion": "4ce404011250be48e4d6fa2ba80db7ef7dafaaebb04c4cc3c5a89cb77a8b64e5",
+    "protocol": "b65f0d20ae4566025c7f6a570b2ba7c37441cb0bb3999dcfedbe0594c436642d"
+  }
+}

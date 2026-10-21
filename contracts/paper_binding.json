@@ -1,0 +1,62 @@
+{
+  "paper_title": "DREAM-BEV: Condition-routed radar-vision fusion for human localization",
+  "main_pdf_sha256": "d12b21e4af4c795d2838f2d19fe57ef3202e4ad945c37581e748c2a14c2531aa",
+  "supplement_pdf_sha256": "5097580f5bdd440d1fe974eba55ad37800de3ccf34c27a377f194d9199b955f0",
+  "main_pages": 16,
+  "supplement_pages": 8,
+  "paper_pdfs_in_repository": false,
+  "readme_scope": "Source, protocols, selected numerical evidence, and table exports. Private data and model binaries are external prerequisites.",
+  "implementation_bindings": [
+    {
+      "path": "src/rvfusion/lattice_fusion.py",
+      "sha256": "04093e97da4fd57c7f6874a90d22565fd09986aea697b13ab16483e6914cc46c"
+    },
+    {
+      "path": "src/rvfusion/lattice_losses.py",
+      "sha256": "1d91db16ba9db8af33a3ef3c7b7c6686d9486111b6f87facc38f4f1dd8ec31f9"
+    },
+    {
+      "path": "src/rvfusion/bearing_stress.py",
+      "sha256": "2305a307f08c607c888bc68c52ec461d5a2c8141df871563e81746b7f98a48f1"
+    },
+    {
+      "path": "src/rv_evidence_net/model.py",
+      "sha256": "4c38c70c5bdc47100fb314a837d0afbf06fe8cdf4861804ea4c938288160dc3f"
+    },
+    {
+      "path": "src/rv_bearing_net/model.py",
+      "sha256": "3a13e30848fc23b4d096c5cb9cac91bcfc3dada323c85cba6c65e05849ba5fb7"
+    },
+    {
+      "path": "src/radar_bev/models/backbones.py",
+      "sha256": "31f1559fc7fd95781ac03fc5d2a034a6e12983e71b9accbd4d2cda4135ece83d"
+    },
+    {
+      "path": "scripts/train_universal_expert.py",
+      "sha256": "f2886e0029f253822a046a5519332678b96b79886ebdbda3dc0873501085a2a6"
+    },
+    {
+      "path": "scripts/train_person_encoder.py",
+      "sha256": "3bc723f65d5176967fdb66f0bd151c4bbe83d01725c72fdd9cc72bad1666345a"
+    },
+    {
+      "path": "src/rv_evidence_net/protocol.py",
+      "sha256": "5b4b727d04b77345300c54301f81d223ae4808cf66df1e59a35b5ab79aea4da7"
+    },
+    {
+      "path": "src/rv_evidence_net/data.py",
+      "sha256": "ad575de9bbf874fd1ce166219735a743f318ceed19996c6739452bcefe43b97b"
+    },
+    {
+      "path": "evidence/active_development_contract/stress_curves/visual_conflict_sweep.csv",
+      "sha256": "7fc743b0016c3931e82efa008be205ecbdfff2b3e6b3a4e0312d02117782ba96"
+    }
+  ],
+  "packaging_changes": [
+    "Added explicit portable person-encoder training and teacher-cache entry points; restored the original split-aware loader.",
+    "Restored ERODNetCoreBEV, TRODNetCoreBEV and MetaFormer block from the original training source; class bodies match by AST excluding docstrings.",
+    "Added public-dataset source closure and CLI launcher without changing model execution.",
+    "Updated manuscript identity and full perturbation-curve data; no training or Locked Test inference was run."
+  ],
+  "compact_core_source_sha256": "9608baf80e7467b282e9bf91afcd8d923c72062577020e481718649125372bca"
+}

@@ -1,0 +1,17 @@
+{
+  "protocol": "IF-only Development controlled no-reset route transition",
+  "locked_test_used": false,
+  "episodes": 20,
+  "ordered_route_pairs": 20,
+  "frames_per_episode": 300,
+  "boundary_frame": 150,
+  "availability_delay_frames": 32,
+  "hold_frames": 30,
+  "radar_clip_crosses_boundary": true,
+  "causal_state_reset_at_boundary": false,
+  "source_sha256": {
+    "manifest": "834185d86a1cff6f86271fee910540f600ac5e496ebb9e303f39af832fa02047",
+    "sequence_ledger": "08bcc9ed637665ce17c4d3e0ad96821c91a7cafc2c40afaa71aefa5cf80c5032",
+    "policy_predictions": "22a35fd87eb7561722eaed4e8fa50f24240ece7c8d1c5ddd56316afed40b5ce2"
+  }
+}

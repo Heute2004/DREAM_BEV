@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\small
+\caption{Interchanging policy backends with fixed downstream models. Timing is mean batch-one policy latency on RTX 5090, not system throughput.}
+\label{tab:policy-compact}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Policy & AP@0.30 & P90 (m)&Time (ms)\\
+\midrule
+MobileNetV3-Small &0.7732&0.4260&2.55\\
+ResNet-152 &0.7741&0.4273&8.43\\
+InternVL3-1B &0.7742&0.4273&2623.34\\
+\bottomrule
+\end{tabular*}
+\end{table}

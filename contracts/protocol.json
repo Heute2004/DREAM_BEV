@@ -1,0 +1,19 @@
+{
+  "name": "DREAM-BEV Information Fusion sequence-isolated protocol",
+  "scope": "single-person radar-vision localization on the canonical sequence set",
+  "split_unit": "complete_sequence",
+  "frames_per_sequence": 300,
+  "splits": {
+    "Train": {"sequences": 87, "frames": 26100},
+    "Development Val": {"sequences": 34, "frames": 10200},
+    "Locked Test": {
+      "sequences": 8,
+      "frames": 2400,
+      "members": ["seq_032", "seq_041", "seq_052", "seq_069", "seq_102", "seq_118", "seq_132", "seq_153"]
+    }
+  },
+  "excluded_sequences": ["seq_001 through seq_021", "seq_064", "seq_112", "seq_113", "seq_114", "seq_148"],
+  "frame_manifest_sha256": "2c2d65f970cfa3b5b424588b4c9ef6464a865f201ad446c2f977ec7ecf34d152",
+  "sequence_split_sha256": "9e8699f1c7099d3fb655fefb72d337911a0cc736477de8224729d960d89afada",
+  "routing_manifest_sha256": "9a2d59a478db11148ac156404d80a4bf280b92ab190b603c2accf9a1f841c035"
+}

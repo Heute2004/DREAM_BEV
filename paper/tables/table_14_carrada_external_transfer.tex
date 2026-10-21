@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{CARRADA public-sequence single-person metric-BEV transfer diagnostic. Full-model public adaptations and core-adapted source-architecture controls use the same causal eight-frame RA/RA-MTI input, 24 fitting source sequences, six disjoint Development source sequences (2,446 synchronized Development frames), and the pre-defined 496-frame single-pedestrian localization subset. E-RODNet-core-adapted reuses the compact core adaptation from the private-corpus study with a parameter-free CARRADA geometric adapter; it is not an end-to-end reproduction of the original E-RODNet system. This custom diagnostic is neither an official CARRADA benchmark nor a complete-fusion evaluation.}\label{tab:carrada-transfer}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Method & Trainable params & AP@0.25 & AP@0.30 & AP@0.50 & AP@0.75 & AP@1.00 & Mean error (m) & P90 (m) \\
+\midrule
+FCN-8s adapted & 134.273M & 0.0103 & 0.0246 & 0.0543 & 0.0871 & 0.1613 & 4.9176 & 13.3104 \\
+RODNet-CDC adapted & 34.506M & 0.1424 & 0.2007 & 0.3151 & 0.3786 & 0.4540 & 3.7039 & 12.5519 \\
+RODNet-HG adapted & 64.801M & 0.0162 & 0.0239 & 0.0598 & 0.1304 & 0.1683 & 4.5124 & 11.1527 \\
+\midrule
+E-RODNet-core-adapted~\cite{xu2024erodnet} & 1.311M & 0.1134 & 0.1732 & 0.3946 & \textbf{0.5575} & \textbf{0.6160} & \textbf{2.0188} & \textbf{6.4875} \\
+\midrule
+\textbf{DREAM-BEV} & \textbf{1.203M} & \textbf{0.1558} & \textbf{0.2341} & \textbf{0.4178} & 0.5487 & 0.6030 & 2.3316 & 7.2977 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

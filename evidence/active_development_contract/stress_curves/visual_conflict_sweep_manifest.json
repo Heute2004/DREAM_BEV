@@ -1,0 +1,58 @@
+{
+  "contract": "Development-only frozen visual-conflict sweep",
+  "expected_frames": 9969,
+  "guard": {
+    "ema_alpha": 0.1,
+    "ema_threshold": 0.5
+  },
+  "severity_grid": {
+    "bearing_bias": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0
+    ],
+    "temporal_lag": [
+      2.0,
+      4.0,
+      8.0
+    ],
+    "visual_dropout": [
+      0.25,
+      0.5,
+      0.75
+    ]
+  },
+  "rows": 30,
+  "sources": {
+    "/home/hyc/radar+ris/DREAM-BEV_IF_VisualConflictSweep_Code_20260820/evidence/causal_consistency_protection/final_tau05/development/clean_guard_off.json": "ab65ba1f6b5ff4a31f1618efd74ae751b90f73106baa21dfa9e1cc677a47d7ea",
+    "/home/hyc/radar+ris/DREAM-BEV_IF_VisualConflictSweep_Code_20260820/evidence/causal_consistency_protection/final_tau05/development/clean_guarded.json": "6f0d9ab43f370348edeff8e594d48cadcec5bad7c72516520914a285da79f8af",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/1/guard_off/metrics.json": "47c493cc2b07fb08962864005bdea732d9a51d151c815b74ae9f9f3793313f09",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/1/protected/metrics.json": "52ce316cd0007eb02dd5d27a840453d2779ca284939a2bbaf0bf213561d663aa",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/2/guard_off/metrics.json": "6c1392d929e1e1f7c99b8e247926180552eb388390b78bcd5f13e9970b2b429f",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/2/protected/metrics.json": "b8928a8a349df40b77d34b708e475f53b5ae088be203a9e9f30e426ad32d3182",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/3/guard_off/metrics.json": "9d87d32911a5985423572e0d0adf9d2edf484f177cdb1694a3c93c21a59e031c",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/3/protected/metrics.json": "01ecd388e444d23846b0343b37e66cf310d75f5bb7ad9718dcbe3e81786f04d0",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/4/guard_off/metrics.json": "13bc3999e2bf49341decb9c04edc5e476519dc870599fc4c21290c440e78cb7d",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/4/protected/metrics.json": "10fd8c0df75256c34a0670b37790aa4b28622335ca548ebbf2e77e7ce64fff84",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/5/guard_off/metrics.json": "bd1aa6d03dafd083d0d9a1c75571a915be7e2a2fc5bd30fb1fb21930b247af6f",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/5/protected/metrics.json": "fc96490b56d9a8f011123c96f0a41f8e119852a37f2fb22ad5172e3ba8b9e72e",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/6/guard_off/metrics.json": "79c0fd0a6fba35ca3e1da9ef670b8efe772e3538df0eff2a41783068049cd77d",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/bearing_bias/6/protected/metrics.json": "4b47032322e6ff70a6e2d513edf37b04777fa20b77fbd29d739daea1d518408f",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/temporal_lag/2/guard_off/metrics.json": "624db97d52a70ac8d43ef4b269040ddaf24a1dc16dbaff54b9a5409c56d00cd8",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/temporal_lag/2/protected/metrics.json": "79b8736ac8a127513ca0c1a053be8d2eccf5c5ce1111d27c796e41bec337a0fe",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/temporal_lag/4/guard_off/metrics.json": "8dbfb85cd458cdc76bf10d4b7d1ac98ba66f8e1e9c0ad7ec8e01c776f0a4f912",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/temporal_lag/4/protected/metrics.json": "ea50adc97658dcd0a12bc042b10ed680bbbf8c707e40c3204946753c80b8ad8e",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/temporal_lag/8/guard_off/metrics.json": "87aabebf624dfe04dc7d118532d85479d31be136e7d5f414d3d3b9b69aa44166",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/temporal_lag/8/protected/metrics.json": "d7f5b5989a7b16e73fbbb3c141b96b837619bafad11622823055e3753a4ff90f",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/visual_dropout/25/guard_off/metrics.json": "f30355b126bee2fecb5501a288e72d1958d6a0a3747a495be4a7edfba3a34ab6",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/visual_dropout/25/protected/metrics.json": "2d9d0596b243549792ed7b40887aac6992d375989628a2d98bce598ea61a2e48",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/visual_dropout/50/guard_off/metrics.json": "9bfcdc302f80108f3200d4078c781a1f7910162b7373a33f4eba471165e3cd54",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/visual_dropout/50/protected/metrics.json": "444dcb9f879f256929f0a6bb077e2a6e0add070ee69af1e6790360e1adb62fe0",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/visual_dropout/75/guard_off/metrics.json": "9a917ae126d47646cd50478636fae959fe416070aa3337dcfbfc3c1b6a7c6502",
+    "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_IF_VisualConflictSweep_Development_20260820/replay/visual_dropout/75/protected/metrics.json": "2c89f5738132ef464aef0c4efef8f1f1e69f09843d841bc83cd2b2e9e82b708f"
+  },
+  "output_sha256": "7fc743b0016c3931e82efa008be205ecbdfff2b3e6b3a4e0312d02117782ba96"
+}

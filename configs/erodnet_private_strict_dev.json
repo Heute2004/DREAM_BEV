@@ -1,0 +1,16 @@
+{
+  "model": "e_rodnet",
+  "source_repository": "https://github.com/lupeng-xm/E-RODNet.git",
+  "source_commit": "da4be8011090ad565a85cc39f849ad9f0688ef14",
+  "source_body": "nets/E_RODNet/E_RODNet.py",
+  "input": "16-frame causal RA+RA-MTI with parameter-free four-slot chirp repetition",
+  "output": "current-frame polar response projected to metric BEV",
+  "train_epochs": 16,
+  "batch_size": 8,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "seed": 3407,
+  "checkpoint_selection_metric": "Development Val AP@0.5 m",
+  "locked_test_read": false,
+  "amp": false
+}

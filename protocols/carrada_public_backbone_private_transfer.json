@@ -1,0 +1,31 @@
+{
+  "name": "carrada_public_backbone_private_transfer",
+  "purpose": "Transfer the public radar architectures previously evaluated on CARRADA to the private DREAM-BEV radar protocol.",
+  "models": [
+    "dream_bev",
+    "t_rodnet_compact",
+    "rodnet_cdc",
+    "rodnet_hg",
+    "fcn8s",
+    "e_rodnet"
+  ],
+  "shared_contract": {
+    "partition": "Private Train and Development only; Locked Test is not constructed or read.",
+    "input": "RA plus RA-MTI, causal 16-frame history [t-15,...,t]",
+    "output": "one-person metric BEV confidence logits [1,200,234]",
+    "seed": 3407,
+    "train_epochs": 16,
+    "batch_size": 1,
+    "gradient_accumulation": 8,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "coordinate_weight": 0.05,
+    "selection_metric": "Development AP@0.5 m",
+    "early_stop_patience": 4
+  },
+  "provenance": {
+    "model_suite": "Public architecture bodies and training schedule transferred from the CARRADA baseline suite.",
+    "data_layer_change": "Only the CARRADA data reader and labels are replaced by the private sequence manifest and frozen metric-BEV reference.",
+    "metric_change": "Private common evaluator replaces CARRADA's single-target diagnostic evaluator."
+  }
+}

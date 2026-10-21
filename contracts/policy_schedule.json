@@ -1,0 +1,10 @@
+{
+  "radar_frame_rate_hz": 10,
+  "policy_capture_interval_frames": 30,
+  "policy_availability_delay_frames": 32,
+  "policy_hold_frames": 30,
+  "initial_policy": "radar_identity",
+  "admission_scope": "whole_hold_interval",
+  "fusion_constraint": "radar_y_is_immutable"
+}
+

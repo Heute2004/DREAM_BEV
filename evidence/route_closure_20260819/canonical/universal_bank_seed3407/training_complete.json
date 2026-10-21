@@ -1,0 +1,7 @@
+{
+  "completed": true,
+  "completed_utc": "2026-08-19T13:17:43+00:00",
+  "completed_epochs": 11,
+  "best_epoch": 7,
+  "best_ap_0p3m": 0.7535190652773338
+}

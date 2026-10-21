@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering\small
+\caption{Development recovery-allocation controls. Block A shares protected visual processing; block B evaluates radar-only recovery. Active/stored counts exclude the shared backbone. Route-macro AP averages the five conditions equally.}
+\label{tab:allocation}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llrrr@{}}
+\toprule
+Configuration & Active / stored capacity & AP@0.30 & Route-macro AP & P90 (m)\\
+\midrule
+\multicolumn{5}{l}{\emph{A. Expert allocation with the same visual path}}\\
+Best fixed route &1 / 5 experts&0.7546&0.7780&0.4384\\
+Random held route (100 assignments)&1 / 5 experts&0.7494&--&--\\
+Static uniform mixture &5 / 5 experts&0.7700&0.7944&\textbf{0.4132}\\
+Learned route &1 / 5 experts&\textbf{0.7742}&\textbf{0.7963}&0.4273\\
+\midrule
+\multicolumn{5}{l}{\emph{B. Universal and routed radar recovery}}\\
+Universal, active-capacity matched &72,652 / 72,652&0.7467&0.7741&\textbf{0.4247}\\
+Universal, bank-capacity matched &363,253 / 363,253&0.7535&0.7775&0.4291\\
+Routed expert pool &72,650 / 363,248&\textbf{0.7617}&\textbf{0.7863}&0.4350\\
+\bottomrule
+\end{tabular*}
+\end{table*}

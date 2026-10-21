@@ -1,0 +1,8 @@
+{
+  "protocol": "sequence_locked",
+  "scope": "base",
+  "authorization": "approved_final_evaluation",
+  "manifest_sha256": "<sha256 of the evaluation manifest>",
+  "initial_checkpoint_sha256": "<sha256 of the frozen fusion checkpoint>",
+  "allowed_sequences": ["<locked sequence identifiers>"]
+}

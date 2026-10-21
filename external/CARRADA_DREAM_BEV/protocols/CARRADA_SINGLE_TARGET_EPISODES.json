@@ -1,0 +1,185 @@
+{
+  "dataset": "CARRADA",
+  "contract": "strict continuous single-pedestrian episode with one fixed official instance ID",
+  "min_episode_frames": 30,
+  "cars_and_cyclists_retained_as_distractors": true,
+  "multi_pedestrian_frames_excluded": true,
+  "history_clamped_at_episode_start": true,
+  "splits": {
+    "fit": [
+      {
+        "episode_id": "2020-02-28-12-12-16__000776__000020_000101",
+        "sequence_id": "2020-02-28-12-12-16",
+        "target_instance_id": "000776",
+        "start_frame": 20,
+        "end_frame": 101,
+        "frame_count": 82
+      },
+      {
+        "episode_id": "2020-02-28-12-12-16__000775__000230_000310",
+        "sequence_id": "2020-02-28-12-12-16",
+        "target_instance_id": "000775",
+        "start_frame": 230,
+        "end_frame": 310,
+        "frame_count": 81
+      },
+      {
+        "episode_id": "2020-02-28-12-12-16__000786__000337_000382",
+        "sequence_id": "2020-02-28-12-12-16",
+        "target_instance_id": "000786",
+        "start_frame": 337,
+        "end_frame": 382,
+        "frame_count": 46
+      },
+      {
+        "episode_id": "2020-02-28-12-12-16__000785__000449_000487",
+        "sequence_id": "2020-02-28-12-12-16",
+        "target_instance_id": "000785",
+        "start_frame": 449,
+        "end_frame": 487,
+        "frame_count": 39
+      },
+      {
+        "episode_id": "2020-02-28-12-13-54__000799__000040_000193",
+        "sequence_id": "2020-02-28-12-13-54",
+        "target_instance_id": "000799",
+        "start_frame": 40,
+        "end_frame": 193,
+        "frame_count": 154
+      },
+      {
+        "episode_id": "2020-02-28-12-13-54__000799__000221_000299",
+        "sequence_id": "2020-02-28-12-13-54",
+        "target_instance_id": "000799",
+        "start_frame": 221,
+        "end_frame": 299,
+        "frame_count": 79
+      },
+      {
+        "episode_id": "2020-02-28-12-13-54__000810__000400_000439",
+        "sequence_id": "2020-02-28-12-13-54",
+        "target_instance_id": "000810",
+        "start_frame": 400,
+        "end_frame": 439,
+        "frame_count": 40
+      },
+      {
+        "episode_id": "2020-02-28-12-13-54__000810__000443_000604",
+        "sequence_id": "2020-02-28-12-13-54",
+        "target_instance_id": "000810",
+        "start_frame": 443,
+        "end_frame": 604,
+        "frame_count": 162
+      },
+      {
+        "episode_id": "2020-02-28-12-16-05__000821__000197_000345",
+        "sequence_id": "2020-02-28-12-16-05",
+        "target_instance_id": "000821",
+        "start_frame": 197,
+        "end_frame": 345,
+        "frame_count": 149
+      },
+      {
+        "episode_id": "2020-02-28-12-16-05__000857__000431_000574",
+        "sequence_id": "2020-02-28-12-16-05",
+        "target_instance_id": "000857",
+        "start_frame": 431,
+        "end_frame": 574,
+        "frame_count": 144
+      },
+      {
+        "episode_id": "2020-02-28-12-22-05__000998__000048_000180",
+        "sequence_id": "2020-02-28-12-22-05",
+        "target_instance_id": "000998",
+        "start_frame": 48,
+        "end_frame": 180,
+        "frame_count": 133
+      },
+      {
+        "episode_id": "2020-02-28-12-22-05__001011__000269_000321",
+        "sequence_id": "2020-02-28-12-22-05",
+        "target_instance_id": "001011",
+        "start_frame": 269,
+        "end_frame": 321,
+        "frame_count": 53
+      },
+      {
+        "episode_id": "2020-02-28-12-23-30__001036__000068_000307",
+        "sequence_id": "2020-02-28-12-23-30",
+        "target_instance_id": "001036",
+        "start_frame": 68,
+        "end_frame": 307,
+        "frame_count": 240
+      },
+      {
+        "episode_id": "2020-02-28-13-08-51__001111__000075_000225",
+        "sequence_id": "2020-02-28-13-08-51",
+        "target_instance_id": "001111",
+        "start_frame": 75,
+        "end_frame": 225,
+        "frame_count": 151
+      },
+      {
+        "episode_id": "2020-02-28-13-09-58__001115__000037_000174",
+        "sequence_id": "2020-02-28-13-09-58",
+        "target_instance_id": "001115",
+        "start_frame": 37,
+        "end_frame": 174,
+        "frame_count": 138
+      }
+    ],
+    "development": [
+      {
+        "episode_id": "2020-02-28-12-17-57__000941__000334_000391",
+        "sequence_id": "2020-02-28-12-17-57",
+        "target_instance_id": "000941",
+        "start_frame": 334,
+        "end_frame": 391,
+        "frame_count": 58
+      },
+      {
+        "episode_id": "2020-02-28-12-17-57__000941__000394_000612",
+        "sequence_id": "2020-02-28-12-17-57",
+        "target_instance_id": "000941",
+        "start_frame": 394,
+        "end_frame": 612,
+        "frame_count": 219
+      },
+      {
+        "episode_id": "2020-02-28-12-20-22__000957__000099_000179",
+        "sequence_id": "2020-02-28-12-20-22",
+        "target_instance_id": "000957",
+        "start_frame": 99,
+        "end_frame": 179,
+        "frame_count": 81
+      },
+      {
+        "episode_id": "2020-02-28-12-20-22__000980__000297_000363",
+        "sequence_id": "2020-02-28-12-20-22",
+        "target_instance_id": "000980",
+        "start_frame": 297,
+        "end_frame": 363,
+        "frame_count": 67
+      }
+    ]
+  },
+  "summary": {
+    "train_human_sequences": [
+      "2020-02-28-12-12-16",
+      "2020-02-28-12-13-54",
+      "2020-02-28-12-16-05",
+      "2020-02-28-12-22-05",
+      "2020-02-28-12-23-30",
+      "2020-02-28-13-08-51",
+      "2020-02-28-13-09-58"
+    ],
+    "validation_human_sequences": [
+      "2020-02-28-12-17-57",
+      "2020-02-28-12-20-22"
+    ],
+    "train_episode_count": 15,
+    "validation_episode_count": 4,
+    "train_episode_frames": 1691,
+    "validation_episode_frames": 425
+  }
+}

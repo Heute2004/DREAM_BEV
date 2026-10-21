@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Development-only transfer of public radar architectures to the common causal 16-frame RA/RA-MTI and single-person metric-BEV localization contract. Each row uses the same 87-sequence Train partition and the same 34-sequence Development manifest (9,969 scored frames). RODNet-CDC, RODNet-HG, and FCN-8s are full-model task adaptations at the shared interfaces; E-RODNet-core-adapted is a compact source-derived 3D MetaFormer core adaptation, while T-RODNet-core-adapted retains the official temporal/polar core. Both core-adapted rows use the common metric-BEV decoder. Checkpoints are selected by Development AP@0.50. Every row is a bare radar model, without a route expert, policy backend, RGB evidence, or RVFusion. AP@0.30 is reported descriptively and was not used for anchor selection. This is a selection-stage diagnostic, not a locked-test comparison. \Base{} is the shared anchor used by the subsequent recovery and fusion hierarchy.}
+\label{tab:backbones}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & Params. (M) & AP@0.30 & AP@0.50 & AP@1.00 & Mean (m) & P90 (m) & FPS \\
+\midrule
+RODNet-CDC-adapted~\cite{rodnet2021} & 34.506 & 0.3388 & 0.5756 & 0.7498 & 1.5598 & 5.7109 & 102.2 \\
+RODNet-HG-adapted~\cite{rodnet2021} & 64.801 & 0.3454 & 0.5912 & 0.7721 & 1.3630 & 2.0550 & 25.5 \\
+FCN-8s-adapted~\cite{long2015fcn} & 134.282 & 0.6161 & 0.8416 & 0.9503 & \textbf{0.3291} & 0.5743 & 153.2 \\
+E-RODNet-core-adapted~\cite{xu2024erodnet} & 1.311 & 0.5790 & 0.8281 & 0.9497 & 0.3671 & 0.5650 & 72.2 \\
+T-RODNet-core-adapted~\cite{jiang2023trodnet} & 1.263 & 0.7187 & 0.8921 & 0.9490 & 0.4117 & \textbf{0.4364} & \textbf{307.9} \\
+\midrule
+\Base{} & \textbf{1.203} & \textbf{0.7272} & \textbf{0.8991} & \textbf{0.9515} & 0.3837 & 0.4387 & 221.2 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

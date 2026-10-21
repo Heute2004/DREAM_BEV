@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering\small
+\caption{CRUW fusion adaptation on 1,074 Development frames. Each block shares its fitted expert-radar anchor, RGB evidence, split, and evaluator. Gains are relative to that block's radar-only row.}
+\label{tab:cruw-combined}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+Fusion & AP@0.25 & AP@0.30 & Gain (pp) & AP@0.50\\
+\midrule
+\multicolumn{5}{l}{\emph{PB-MHBR recovery anchor}}\\
+Expert-radar &0.5769&0.7168&--&0.8589\\
+RC-ROSNet adapted &0.5816&0.7168&+0.00&0.8599\\
+CRN adapted &0.5898&0.7293&+1.25&\textbf{0.8656}\\
+RCBEVDet adapted &0.5131&0.6500&-6.68&0.8080\\
+Protected RVFusion &\textbf{0.6008}&\textbf{0.7319}&\textbf{+1.51}&0.8540\\
+\midrule
+\multicolumn{5}{l}{\emph{GG-SRRE recovery anchor}}\\
+Expert-radar &0.5806&0.7172&--&0.8606\\
+RC-ROSNet adapted &0.5926&0.7239&+0.67&\textbf{0.8664}\\
+CRN adapted &0.5720&0.6945&-2.27&0.8531\\
+RCBEVDet adapted &0.5325&0.6566&-6.06&0.8243\\
+Protected RVFusion &\textbf{0.5989}&\textbf{0.7316}&\textbf{+1.43}&0.8603\\
+\bottomrule
+\end{tabular*}
+\end{table*}

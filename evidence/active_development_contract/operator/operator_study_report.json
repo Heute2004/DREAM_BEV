@@ -1,0 +1,69 @@
+{
+  "protocol": "IF-only Train/Development operator study",
+  "locked_test_used": false,
+  "reference_split": "Development Val",
+  "manifest_rows": 36300,
+  "manifest_splits": [
+    "Train",
+    "Development Val"
+  ],
+  "arms": {
+    "local_posterior_guard_off": {
+      "frames": 9969,
+      "ap_0p25m": 0.6812867347845613,
+      "ap_0p3m": 0.7917502493745072,
+      "ap_0p5m": 0.9055483598770712,
+      "mean_location_error_m": 0.356486976146698,
+      "p90_location_error_m": 0.4156237840652466,
+      "visual_acceptance_rate": 0.6489116260407263,
+      "harmed_rate": 0.2683318286688735
+    },
+    "local_posterior_guarded": {
+      "frames": 9969,
+      "ap_0p25m": 0.6604518348363433,
+      "ap_0p3m": 0.7742040499669717,
+      "ap_0p5m": 0.9055388941243744,
+      "mean_location_error_m": 0.36315837502479553,
+      "p90_location_error_m": 0.42730915546417236,
+      "visual_acceptance_rate": 0.35469956866285485,
+      "harmed_rate": 0.13391513692446586
+    },
+    "shared_context_quantized_residual_guarded": {
+      "frames": 9969,
+      "ap_0p25m": 0.6407286445972961,
+      "ap_0p3m": 0.7641808841383098,
+      "ap_0p5m": 0.9048628814696325,
+      "mean_location_error_m": 0.36707764863967896,
+      "p90_location_error_m": 0.42781883478164673,
+      "visual_acceptance_rate": 0.35389708095094796,
+      "harmed_rate": 0.1396328618718026
+    },
+    "local_posterior_always_admit_guarded": {
+      "frames": 9969,
+      "ap_0p25m": 0.6614581322420406,
+      "ap_0p3m": 0.7743662571768793,
+      "ap_0p5m": 0.9052946149629507,
+      "mean_location_error_m": 0.3630721867084503,
+      "p90_location_error_m": 0.42730915546417236,
+      "visual_acceptance_rate": 0.367138128197412,
+      "harmed_rate": 0.13832881933995386
+    },
+    "expert_radar_identity": {
+      "frames": 9969,
+      "ap_0p25m": 0.6263641959936674,
+      "ap_0p3m": 0.7616988890774072,
+      "ap_0p5m": 0.9041262722644287,
+      "mean_location_error_m": 0.37095820903778076,
+      "p90_location_error_m": 0.4350261390209198,
+      "visual_acceptance_rate": 0.0,
+      "harmed_rate": 0.0
+    }
+  },
+  "no_op_density_diagnostic": {
+    "deployment_decision_role": "not an independent deployed selection operator under direct_utility acceptance",
+    "posterior_no_op_disabled": true,
+    "fused_ap_0p3m": 0.7917502493745072,
+    "note": "retained as an implementation diagnostic; excluded from mechanism claims"
+  },
+  "interpretation_boundary": "The guarded candidate-local posterior is compared with the compact shared-context quantized residual under the same frozen radar anchor, visual evidence, geometry, causal policy trace, and Development-only protocol."
+}

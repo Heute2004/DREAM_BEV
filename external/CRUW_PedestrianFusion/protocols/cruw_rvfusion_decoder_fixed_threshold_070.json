@@ -1,0 +1,13 @@
+{
+  "artifact": "fixed-threshold robustness replay",
+  "official_test_read": false,
+  "development_calibration": {
+    "selected_score_threshold": 0.70,
+    "selected_low_score_nonidentity_bias": -4.6,
+    "selected_high_score_nonidentity_bias": -4.7,
+    "selected_temperature": 2.5,
+    "selected_expectation_noop_logit_offset": 1.0,
+    "selected_visual_bearing_strength": 1.0,
+    "selected_visual_sigma_floor_deg": 2.0
+  }
+}

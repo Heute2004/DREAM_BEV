@@ -1,0 +1,80 @@
+{
+  "study": "CARRADA common-contract radar baseline comparison",
+  "status": "frozen",
+  "scope": "Frozen Development-only external radar-representation diagnostic used in the manuscript; not an official CARRADA benchmark or fusion transfer result",
+  "selection": {
+    "current_dream_bev_training_hyperparameters": {
+      "learning_rate": 0.000375,
+      "weight_decay": 0.00015
+    },
+    "selection_scope": "user-approved final selection from the uniform common-contract Development search",
+    "previous_freeze_archive": "_superseded_freeze_before_J/FROZEN_COMPARISON_D.json"
+  },
+  "protocol": {
+    "fit_sequences": 24,
+    "development_sequences": 6,
+    "official_partition_usage": "fit combines sequences distributed under CARRADA official Train and Test; Development uses sequences distributed under official Validation",
+    "official_benchmark_claim": false,
+    "development_synchronized_frames": 2446,
+    "single_pedestrian_localization_frames": 496,
+    "localization_frame_selection": "pre-defined Development frames with one pedestrian annotation; selected from CARRADA annotations before model evaluation",
+    "input": "RA + RA-MTI, causal eight-frame history [t-7,t]",
+    "target": "one-person 200x234 metric BEV confidence map",
+    "frame_loss_weights": {
+      "background": 0.02,
+      "car_or_cyclist_hard_negative": 0.75,
+      "pedestrian_positive": 2.0
+    },
+    "positive_resampling": false,
+    "patience": 4,
+    "dedicated_locked_test": false,
+    "paper_use": "included as the paper-facing frame-level single-pedestrian CARRADA radar-representation diagnostic",
+    "protocol_sha256": "1ca4d2aa5418b1120e84e80bf2794517ad177b1e9e6b8a1a3dc7cfc6515542f1"
+  },
+  "rows": [
+    {
+      "method": "DREAM-BEV (Ours)",
+      "parameters": 1202785,
+      "checkpoint_sha256": "2ff970fd1252fd84170913fbbf69444622eee4a863be1e36f331a8fd4f820616",
+      "report": "FROZEN_DREAM_BEV_J.json",
+      "authoritative_remote_artifact": "/data_hard_driver/hyc/Radar+RIS/runs/CARRADA_DREAM_BEV_POSTFREEZE_REFINEMENT_20260814/J_lr3p75e4_wd1p5e4",
+      "metrics": {"AP@0.25": 0.1558365662100498, "AP@0.30": 0.23413432242316284, "AP@0.50": 0.41780366784344247, "AP@0.75": 0.5487298491542217, "AP@1.00": 0.6029841064021637, "mean_error_m": 2.3316400051116943, "P90_error_m": 7.297727584838867}
+    },
+    {
+      "method": "T-RODNet source architecture",
+      "parameters": 156804874,
+      "checkpoint_sha256": "1725529846641ea8f6d1dfd256c6d82c396ab30d7037f74134ddbfb51c9409c6",
+      "report_sha256": "2831e178b5691d1664c19054b151f15b4b5cac0bb3a81543c5c964af2cbbb5a8",
+      "metrics": {"AP@0.25": 0.1627527542719168, "AP@0.30": 0.22137525112406847, "AP@0.50": 0.39831900939029274, "AP@0.75": 0.5020410981005293, "AP@1.00": 0.5797449831036829, "mean_error_m": 2.5572943687438965, "P90_error_m": 8.00570297241211}
+    },
+    {
+      "method": "RODNet-CDC",
+      "parameters": 34506434,
+      "checkpoint_sha256": "29d2d18b9fb3f5e4d0671e66da1d5c9a449e5db1f120b3d023e1dfd5fd860161",
+      "report_sha256": "4559a47caa4d8a7bf0aa5671aa477028e618a86da901eccbcebd48eb03a182b6",
+      "metrics": {"AP@0.25": 0.14241556330985264, "AP@0.30": 0.20069934530773664, "AP@0.50": 0.31513100902546565, "AP@0.75": 0.3785881469395933, "AP@1.00": 0.45401170421388354, "mean_error_m": 3.7038958072662354, "P90_error_m": 12.551860809326172}
+    },
+    {
+      "method": "RODNet-HG",
+      "parameters": 64800802,
+      "checkpoint_sha256": "a081d165403cd70d23ef242e9c61a9455dacf3edbc8f68d42f49cb2d381618c0",
+      "report_sha256": "14f02c96c9aa421650f3234315a34dd6d3beed57fbfa605af0cb985dc51a0fa6",
+      "metrics": {"AP@0.25": 0.01617743521276548, "AP@0.30": 0.02394154047186752, "AP@0.50": 0.059830254538743737, "AP@0.75": 0.13040249030333473, "AP@1.00": 0.16826426305475434, "mean_error_m": 4.512383460998535, "P90_error_m": 11.152666091918945}
+    },
+    {
+      "method": "RECORD-Online",
+      "parameters": 695393,
+      "checkpoint_sha256": "82ff82c4204a60f146c0677dbfca4bbaab79affc8e1bcb475f0a0078e852fd52",
+      "report_sha256": "d9784b411a60f0cd2c779028ae4e433deb7ee98afbff850484a8e7bceb8cacc9",
+      "metrics": {"AP@0.25": 0.08469445020222512, "AP@0.30": 0.1190098344602426, "AP@0.50": 0.24662429694383697, "AP@0.75": 0.2980536934583756, "AP@1.00": 0.3466171293150002, "mean_error_m": 3.706230401992798, "P90_error_m": 12.856685638427734}
+    },
+    {
+      "method": "CARRADA-FCN-8s",
+      "parameters": 134273187,
+      "checkpoint_sha256": "64bb405a005eea466dc0fc71e1032a27ba9896b268eef6ce6dd0967b83c56a80",
+      "report_sha256": "b15f25a0f82d6551394baa2c32dd97ebfa5d9f43a94dc85507e7a7f7552f251e",
+      "metrics": {"AP@0.25": 0.01033994163514923, "AP@0.30": 0.024609628316964047, "AP@0.50": 0.05425617975145766, "AP@0.75": 0.08711459146961179, "AP@1.00": 0.1613165918809339, "mean_error_m": 4.9176201820373535, "P90_error_m": 13.310441970825195}
+    }
+  ],
+  "excluded": ["episode-based CARRADA explorations; retained in the internal archive and excluded from paper tables"]
+}

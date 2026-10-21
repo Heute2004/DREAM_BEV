@@ -1,0 +1,13 @@
+\begin{table*}[t]
+\centering\small
+\caption{Locked localization test on eight sequences (2,400 frames). Both rows share the routed radar estimates and confidence scores; the second adds protected visual refinement.}
+\label{tab:test}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrr@{}}
+\toprule
+Estimator & AP@0.25 & AP@0.30 & AP@0.50 & Mean (m) & P90 (m)\\
+\midrule
+Routed expert-radar &0.6816&0.7992&0.9876&0.1884&0.3228\\
+DREAM-BEV system &\textbf{0.7162}&\textbf{0.8359}&\textbf{0.9881}&\textbf{0.1798}&\textbf{0.3081}\\
+\bottomrule
+\end{tabular*}
+\end{table*}

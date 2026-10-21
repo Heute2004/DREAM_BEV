@@ -1,0 +1,13 @@
+{
+  "artifact": "PB-MHBR frozen decoder readable-threshold replay",
+  "official_test_read": false,
+  "development_calibration": {
+    "selected_score_threshold": 0.70,
+    "selected_low_score_nonidentity_bias": -4.0,
+    "selected_high_score_nonidentity_bias": -5.1,
+    "selected_temperature": 1.5,
+    "selected_expectation_noop_logit_offset": 0.5,
+    "selected_visual_bearing_strength": 0.25,
+    "selected_visual_sigma_floor_deg": 1.0
+  }
+}

@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\small
+\caption{Local visual refinement on 9,969 Development frames. All visual arms share frozen radar and RGB inputs, policy timing, and lateral geometry. The quantized residual uses 0.023M parameters and the posterior 0.149M. Harm is the proportion of all frames with increased Euclidean error relative to expert-radar.}
+\label{tab:operator-study}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrr@{}}
+\toprule
+Operator & AP@0.25 & AP@0.30 & AP@0.50 & P90 (m) & Harm (\%)\\
+\midrule
+Expert-radar &0.6264&0.7617&0.9041&0.4350&0.00\\
+Quantized residual + guard &0.6407&0.7642&0.9049&0.4278&13.96\\
+Candidate-local posterior + guard &0.6605&0.7742&0.9055&0.4273&13.39\\
+\midrule
+Posterior, guard off &0.6813&0.7918&0.9055&0.4156&26.83\\
+Posterior + guard, always eligible &0.6615&0.7744&0.9053&0.4273&13.83\\
+\bottomrule
+\end{tabular*}
+\end{table*}

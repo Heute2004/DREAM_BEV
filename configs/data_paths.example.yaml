@@ -1,0 +1,6 @@
+data_root: /path/to/private/Data_train
+work_root: /path/to/outputs
+checkpoint_root: /path/to/checkpoints
+internvl_root: /path/to/InternVL
+internvl_model_root: /path/to/InternVL3-1B
+

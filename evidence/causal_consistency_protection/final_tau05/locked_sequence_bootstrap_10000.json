@@ -1,0 +1,67 @@
+{
+  "bootstrap_unit": "complete_sequence",
+  "sequence_count": 8,
+  "sequences": [
+    "seq_032",
+    "seq_041",
+    "seq_052",
+    "seq_069",
+    "seq_102",
+    "seq_118",
+    "seq_132",
+    "seq_153"
+  ],
+  "repetitions": 10000,
+  "seed": 3407,
+  "point_estimate": {
+    "radar_ap_0p3m": 0.799233741316136,
+    "fused_ap_0p3m": 0.8359054289569138,
+    "ap_0p3_gain_pp": 3.6671687640777773,
+    "radar_p90_m": 0.3228076086844872,
+    "fused_p90_m": 0.3081321697497823,
+    "p90_reduction_m": 0.01467543893470491,
+    "radar_mean_error_m": 0.18840210252707665,
+    "fused_mean_error_m": 0.17980714747704574,
+    "mean_error_reduction_m": 0.008594955050030911
+  },
+  "confidence_interval_95": {
+    "radar_ap_0p3m": [
+      0.6220229719917233,
+      0.9292498276376303
+    ],
+    "fused_ap_0p3m": [
+      0.6858958058122746,
+      0.9402971458971254
+    ],
+    "ap_0p3_gain_pp": [
+      0.5936043868587038,
+      7.382030213184263
+    ],
+    "radar_p90_m": [
+      0.251425574426504,
+      0.4120052967661574
+    ],
+    "fused_p90_m": [
+      0.23841484169323515,
+      0.3584263646021245
+    ],
+    "p90_reduction_m": [
+      0.0036112644161855377,
+      0.05467147088564239
+    ],
+    "radar_mean_error_m": [
+      0.14234627747604184,
+      0.24005964657445214
+    ],
+    "fused_mean_error_m": [
+      0.13624466013104822,
+      0.2281841887125435
+    ],
+    "mean_error_reduction_m": [
+      0.0030491873963065233,
+      0.014810870737131832
+    ]
+  },
+  "source_causal_replay_csv": "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_ConsistencyGuard_20260815/canonical_locked_guard_tau05/causal_guard_replay.csv",
+  "source_causal_replay_sha256": "8a7553a6aaf6a95dca3fa0234a332e1716d9ad87c37a93bbf66f43b84ca5b588"
+}

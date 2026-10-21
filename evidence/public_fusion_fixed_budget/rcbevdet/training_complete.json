@@ -1,0 +1,5 @@
+{
+  "epochs": 4,
+  "best_ap_0p3m": 0.7320983181306051,
+  "locked_test_used": false
+}

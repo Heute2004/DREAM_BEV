@@ -1,0 +1,19 @@
+{
+  "protocol_name": "cruw_public_pedestrian_only_12fit_4validation",
+  "dataset": "CRUW/ROD2021 server copy",
+  "purpose": "public-sequence validation of the radar-anchored fusion core under unique-pedestrian episodes",
+  "source_partition_read": "train",
+  "official_test_read": false,
+  "sampling": {
+    "sample_stride": 3,
+    "minimum_raw_consecutive_frames": 120,
+    "maximum_annotation_step_m": 0.75
+  },
+  "target_rule": "Exactly one annotated pedestrian per retained frame. Other road users remain in the unmodified RGB and RA inputs.",
+  "fit_sequences": [6, 10, 12, 13, 15, 16, 19, 29, 33, 34, 36, 38],
+  "validation_sequences": [1, 7, 28, 39],
+  "selection_note": "The four validation source sequences were fixed from annotation-only audit summaries to cover clear and distractor-present episodes across near, mid, and far pedestrian ranges. No localization model output or held-out metric was used for this assignment.",
+  "validation_role": "Development validation only. This protocol has no CRUW held-out test partition and must not be described as an official CRUW/ROD2021 test or leaderboard result.",
+  "manual_review_required": "Candidate runs remain pending manual continuity and visual-condition review before model training. Every candidate run from a source sequence inherits that source sequence split.",
+  "eligible_source_sequences": [1, 6, 7, 10, 12, 13, 15, 16, 19, 28, 29, 33, 34, 36, 38, 39]
+}

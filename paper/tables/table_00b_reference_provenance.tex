@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Frozen two-layer label-provenance audit over the 129-sequence ordinary protocol. The depth-derived motion layer provides human-motion geometry; the RA target-peak layer provides radar measurement-domain supervision. Coverage is measured over 38,700 manifest-bound frames. Step statistics describe the reconciled final reference and are not an error estimate against an independent metrology system.}
+\label{tab:reference-provenance}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrr}
+\toprule
+Audit item & Count / P90 & Coverage / maximum \\
+\midrule
+Valid reconciled final BEV reference & 38,590 & 99.72\% \\
+First-pass training-valid reference & 38,478 & 99.43\% \\
+Trusted RA target peak & 34,547 & 89.27\% \\
+Later-stage dense radar label & 38,290 & 98.94\% \\
+Red-band or blue-dropout flag & 36 & 0.093\% \\
+Final-reference step (m) & 0.0718 & 0.3500 \\
+Lateral step $|\Delta x|$ (m) & 0.0585 & 0.1000 \\
+Forward step $|\Delta y|$ (m) & 0.0559 & 0.3500 \\
+\bottomrule
+\end{tabular}
+\end{table}

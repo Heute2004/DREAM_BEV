@@ -1,0 +1,87 @@
+{
+  "paper_title_short": "DREAM-BEV Information Fusion",
+  "paper_pdf_sha256": "d12b21e4af4c795d2838f2d19fe57ef3202e4ad945c37581e748c2a14c2531aa",
+  "coordinate_contract": "preserve Radar-H forward coordinate; permit bounded lateral RGB evidence",
+  "sequence_contract": {
+    "train_sequences": 87,
+    "development_sequences": 34,
+    "locked_test_sequences": 8,
+    "locked_test_frames": 2400
+  },
+  "locked_result": {
+    "expert_radar_ap_0p30": 0.799233741316136,
+    "protected_fusion_ap_0p30": 0.8359054289569138,
+    "gain_percentage_points": 3.6671687640777773,
+    "expert_radar_p90_m": 0.3228076086844872,
+    "protected_fusion_p90_m": 0.30813216974978236,
+    "bootstrap_gain_ci95_percentage_points": [
+      0.5936043868587038,
+      7.382030213184263
+    ]
+  },
+  "development_route_result": {
+    "learned_route_ap_0p30": 0.7742,
+    "best_fixed_route_ap_0p30": 0.7546,
+    "learned_route_macro_ap_0p30": 0.7963,
+    "best_fixed_route_macro_ap_0p30": 0.778,
+    "route_macro_gain_ci95_percentage_points": [
+      0.58,
+      2.92
+    ]
+  },
+  "sources": [
+    {
+      "path": "contracts/frame_manifest.csv",
+      "distribution": "on_request",
+      "sha256": "2c2d65f970cfa3b5b424588b4c9ef6464a865f201ad446c2f977ec7ecf34d152"
+    },
+    {
+      "path": "contracts/sequence_split.csv",
+      "sha256": "9e8699f1c7099d3fb655fefb72d337911a0cc736477de8224729d960d89afada"
+    },
+    {
+      "path": "contracts/routing_manifest.jsonl",
+      "sha256": "9a2d59a478db11148ac156404d80a4bf280b92ab190b603c2accf9a1f841c035"
+    },
+    {
+      "path": "evidence/causal_consistency_protection/final_tau05/locked_metrics_tau05.json",
+      "sha256": "a768ecbc531b49ece60d41b87a1650b5a141727ecfcc1da15770c161d5a323d5"
+    },
+    {
+      "path": "evidence/causal_consistency_protection/final_tau05/locked_sequence_bootstrap_10000.json",
+      "sha256": "df4048c57ca40f15a18abb1edf2da111712aa7543fff968f9ea08a828cdb161f"
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_allocation_final/route_allocation_report.json",
+      "sha256": "69c65278905273bce6281d7f23b2e5396ee1b2237bac8a9328cdafcc30329527"
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/universal_summary_seed3407/universal_expert_report.json",
+      "sha256": "e3af59618a58e6db799e476e08c5cdfab28a5fed3d3797fb4583162b0c56162c"
+    },
+    {
+      "path": "evidence/public_fusion_fixed_budget/official_fusion_summary.json",
+      "sha256": "100a47a78cdf02eff326bab501ebe0dfd352380fe1c5c3a2fd616b30eed5b5aa"
+    },
+    {
+      "path": "evidence/public_sequence_transfer/cruw/protected/pbmhbr.json",
+      "sha256": "c808e23868ca5f7b0c7ded2d47db6c596f6e577c84664e17b033158549e62dc9"
+    },
+    {
+      "path": "evidence/public_sequence_transfer/cruw/protected/gg_srre.json",
+      "sha256": "9ee57f08ee686a0b0b1a2706a9308356b026abf41357bbd5cf39cd2073784ea4"
+    },
+    {
+      "path": "evidence/public_sequence_transfer/carrada/frozen_comparison.json",
+      "sha256": "4743978c839c6ead6b14989a3d12f94eb192a81ac68e88d6a2c451681d4a95d5"
+    },
+    {
+      "path": "evidence/public_sequence_transfer/carrada/current_paper_rows.json",
+      "sha256": "087ec6a92b2a6107b4c47d642f0ed270c5cf5d622c7de1aa03a57d724f259e43"
+    },
+    {
+      "path": "evidence/active_development_contract/stress_curves/visual_conflict_sweep.csv",
+      "sha256": "7fc743b0016c3931e82efa008be205ecbdfff2b3e6b3a4e0312d02117782ba96"
+    }
+  ]
+}

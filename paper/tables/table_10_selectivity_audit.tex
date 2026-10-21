@@ -1,0 +1,27 @@
+\begin{table*}[!t]
+\centering
+\small
+\caption{Locked causal policy-contract audit. Policy admission is segment-level; the fast protection can additionally reject an admitted frame. \texttt{assist\_enabled} is a Radar Health diagnostic only.}
+\label{tab:policy-contract-audit}
+\begin{minipage}[t]{0.50\textwidth}
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrr}
+\toprule
+Deployed policy state & Frames & Share (\%) \\
+\midrule
+Warm-up identity & 256 & 10.67 \\
+Denied response segments & 536 & 22.33 \\
+Policy-level radar identity & 792 & 33.00 \\
+Fast consistency rejections & 574 & 23.92 \\
+All expert-radar identity & 1,366 & 56.92 \\
+Protected RVFusion frames & 1,034 & 43.08 \\
+\bottomrule
+\end{tabular}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.43\textwidth}
+\footnotesize\raggedright
+\textbf{Audit trace.} 80 scheduled segments comprise 8 warm-ups, 54 admitted completed-response segments, and 18 denied completed-response segments. The fast state rejects 574 frames after policy admission; the trace, compositor replay, and all 2,400 evaluated frames agree exactly.
+\end{minipage}
+\end{table*}

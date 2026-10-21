@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Route-specific radar recovery on Development. Each metric cell reports the frozen DREAM-BEV route reference $\rightarrow$ the corresponding route expert. AP@0.50 is retained to verify that strict-location recovery does not reduce coarse detection coverage.}
+\label{tab:experts}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrr}
+\toprule
+Route & Expert & AP@0.25 & AP@0.30 & AP@0.50 & P90 (m) & $\Delta$AP@0.30 (pp) \\
+\midrule
+Open-indoor LOS & CLOR & $0.8375\rightarrow0.8912$ & $0.9403\rightarrow0.9723$ & $1.0000\rightarrow1.0000$ & $0.2499\rightarrow0.2276$ & +3.20 \\
+Indoor clutter & TECS & $0.7987\rightarrow0.8946$ & $0.9423\rightarrow0.9570$ & $1.0000\rightarrow1.0000$ & $0.2794\rightarrow0.2304$ & +1.47 \\
+Open-outdoor weak-return & LTGE-CEN & $0.5676\rightarrow0.6494$ & $0.7049\rightarrow0.7860$ & $0.9308\rightarrow0.9373$ & $0.3970\rightarrow0.3721$ & +8.10 \\
+Outdoor dry-complex & PB-MHBR & $0.3535\rightarrow0.4659$ & $0.5725\rightarrow0.6426$ & $0.7823\rightarrow0.7967$ & $0.9878\rightarrow0.7318$ & +7.02 \\
+Outdoor wet-return & GG-SRRE Recovery & $0.4493\rightarrow0.4943$ & $0.6073\rightarrow0.6405$ & $0.8273\rightarrow0.8428$ & $0.6959\rightarrow0.6665$ & +3.32 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "locked_test_used": false,
+  "canonical_training_seed": 3407,
+  "development_sequences": 34,
+  "development_scored_frames": 9969,
+  "transition_episodes": 20,
+  "full_test_suite": "138 passed",
+  "archive_sha256": "6e4e7697dac86c4a42e3ff1cdc8112d8272509d7dcbba7357ed89282cb03811f",
+  "reports": {
+    "route_allocation": "canonical/route_allocation_final/route_allocation_report.json",
+    "universal_experts": "canonical/universal_summary_seed3407/universal_expert_report.json",
+    "mechanism_signatures": "canonical/mechanism_signatures/mechanism_signature_report.json",
+    "route_transitions": "canonical/route_transitions/evaluation/route_transition_report.json"
+  }
+}

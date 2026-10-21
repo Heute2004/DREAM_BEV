@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering\small
+\caption{Radar recovery operations. Every specialist uses the shared radar features and causal history; RGB selects the route but does not enter the recovery network. Four specialists modify the confidence map. PB-MHBR instead selects a coordinate while retaining the base map.}
+\label{tab:expert-operations}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.19\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}X>{\raggedright\arraybackslash}p{0.15\textwidth}@{}}
+\toprule
+Acquisition condition & Specialist & Evidence aggregation and operation & Output change\\
+\midrule
+Open-indoor LOS & CLOR & Local BEV crop and a 64-D causal radar state predict a bounded offset and response strength. & Local logit residual\\[3pt]
+Indoor clutter & TECS & Ten BEV, polar, and raw-echo candidates interact through four-head, 80-D attention; a straight-through selector chooses one physical candidate. & Candidate-centred logit residual\\[3pt]
+Open-outdoor weak-return & LTGE-CEN & Eight candidates across 16 frames are linked by path-masked temporal attention to recover weak temporal support. & Temporal recovery residual\\[3pt]
+Outdoor dry-complex & PB-MHBR & Eight deterministic BEV, polar, and previous-position hypotheses are ranked by a causal streaming model. & Selected coordinate\\[3pt]
+Outdoor wet-return & GG-SRRE & Local BEV evidence and a 64-D causal state predict a bounded recovery offset and response residual. & Local recovery residual\\
+\bottomrule
+\end{tabularx}
+\end{table*}

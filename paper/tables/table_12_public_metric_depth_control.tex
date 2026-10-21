@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Frozen public monocular metric-depth coordinate control on the 2,400-frame locked test. It uses current RGB, a public COCO-person ROI, and a Train-fixed camera-ground-to-Radar-H mapping.}
+\label{tab:metric-depth-control}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Configuration & AP@1.00 & AP@0.75 & AP@0.50 & AP@0.30 & Mean (m) & P90 (m) & $x$ MAE (m) & $y$ MAE (m) & Coverage \\
+\midrule
+Depth Anything V2 Metric-Hypersim ViT-S + public COCO ROI & 0.1498 & 0.1141 & 0.0393 & 0.0083 & 2.2069 & 4.5902 & 0.5995 & 2.0566 & 0.9125 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

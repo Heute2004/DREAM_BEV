@@ -1,0 +1,80 @@
+{
+  "distribution": "on_request",
+  "files": [
+    {
+      "path": "contracts/frame_manifest.csv",
+      "sha256": "2c2d65f970cfa3b5b424588b4c9ef6464a865f201ad446c2f977ec7ecf34d152",
+      "bytes": 13175176
+    },
+    {
+      "path": "evidence/causal_consistency_protection/final_tau05/locked_causal_guard_replay.csv",
+      "sha256": "8a7553a6aaf6a95dca3fa0234a332e1716d9ad87c37a93bbf66f43b84ca5b588",
+      "bytes": 480726
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/mechanism_signatures/frame_mechanism_signatures.csv",
+      "sha256": "b97aab9ceb41a644445317a6a915956bfeb3e94cdaccfe61701a96a0b9d1cb82",
+      "bytes": 3315821
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_allocation_final/learned_route_composed.csv",
+      "sha256": "2478b24a1562e4e37480356ac8e823ed2659f9487101592a3fbd693d8121083f",
+      "bytes": 1193533
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_allocation_final/ledger_matched_composed.csv",
+      "sha256": "3e0de9bb528da421e1e7547adf3f8862c9abe71185ce357b644c86e49799afe3",
+      "bytes": 1205317
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_allocation_final/random_seed000_composed.csv",
+      "sha256": "60c44e5faa703431ce5bf016e2718afa7e17236d3980b307873565a7054429c8",
+      "bytes": 1194382
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_allocation_final/static_uniform_composed.csv",
+      "sha256": "d5d6e6889db34f0407e4e79d2a6a195bd6dfbbe15e979b48bdd6483a154aa7d1",
+      "bytes": 1269746
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_transitions/evaluation/best_fixed_predictions.csv",
+      "sha256": "c8818b1f4480c21d3c311d6f26d49f922a6a4c7937ee02d791f93633a71dd5c1",
+      "bytes": 1146672
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_transitions/evaluation/learned_delayed_predictions.csv",
+      "sha256": "c86a31411c07a02005211a51273c0c7c47912c7c071d93c41acd5ca5b7d9f3b2",
+      "bytes": 1105177
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_transitions/evaluation/oracle_delayed_predictions.csv",
+      "sha256": "1a335cb262f54b84dd48864ef6c172a9db0ef71517ab8ecafce105c44e562bde",
+      "bytes": 1105779
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_transitions/evaluation/oracle_instant_predictions.csv",
+      "sha256": "5efdfe2e85e43f9fa9800066db9b526bd59d5edeb0e2a5e654c07f709fbb64c3",
+      "bytes": 1110584
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_transitions/protocol/route_transition_manifest.csv",
+      "sha256": "40b566dbe418383ddb465a79c3ee796ebe4f975546f2d5a001b0ee1af6b63273",
+      "bytes": 1899291
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/route_transitions/protocol/route_transition_schedule.csv",
+      "sha256": "eca1cbf2153efa7be12fd6c0e476a35b7750a8445d6968a939032d840730cc08",
+      "bytes": 850059
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/universal_active_seed3407/best_development_predictions.csv",
+      "sha256": "c1934c481fbe0e9b129607814d0a94df2fa1830aeebbba410b8c43731331a01a",
+      "bytes": 1101637
+    },
+    {
+      "path": "evidence/route_closure_20260819/canonical/universal_bank_seed3407/best_development_predictions.csv",
+      "sha256": "02d5885107bbeef9978478f5d546e723f317dbbace3eb8882f5c1277284c34dc",
+      "bytes": 1103533
+    }
+  ]
+}

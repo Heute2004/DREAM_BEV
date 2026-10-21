@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering\small
+\caption{Fusion-core task adaptations on Development. All rows share expert-radar and RGB evidence. The three public cores use a common four-epoch budget; DREAM-BEV uses its separate training schedule. Parameter counts cover the fusion core only.}
+\label{tab:public-fusion-baselines}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrr@{}}
+\toprule
+Fusion core & Params (M)&AP@0.25&AP@0.30&AP@0.50&Mean (m)&P90 (m)\\
+\midrule
+No visual fusion &--&0.6264&0.7617&0.9041&0.3710&0.4350\\
+RC-ROSNet adapted &6.200&0.6130&0.7549&0.9040&0.3742&0.4357\\
+CRN adapted &3.095&0.5988&0.7421&0.9044&\textbf{0.3624}&\textbf{0.4272}\\
+RCBEVDet adapted &4.884&0.5842&0.7321&0.9021&0.3816&0.4491\\
+Protected local posterior &0.149&\textbf{0.6605}&\textbf{0.7742}&\textbf{0.9055}&0.3632&0.4273\\
+\bottomrule
+\end{tabular*}
+\end{table*}

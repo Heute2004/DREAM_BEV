@@ -1,0 +1,42 @@
+{
+  "configuration": {
+    "ema_alpha": 0.1,
+    "ema_threshold": 0.5,
+    "instantaneous_threshold": null,
+    "guard_enabled": false,
+    "admission_mode": "learned",
+    "warmup_frames": 32,
+    "input_source": {
+      "policy_audit": "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_ConsistencyGuard_20260815/final_guarded/development/ungarded/acceptance_audit.csv",
+      "evidence_audit": "/data_hard_driver/hyc/Radar+RIS/runs/DREAM_BEV_ConsistencyGuard_20260815/final_guarded/development/ungarded/acceptance_audit.csv"
+    }
+  },
+  "frames": 9969,
+  "radar": {
+    "ap_0p25m": 0.6263641959936674,
+    "ap_0p3m": 0.7616988890774072,
+    "ap_0p5m": 0.9041262722644287,
+    "ap_1p0m": 0.949427522646086,
+    "ap_ols_0p5": 0.9669085311427046,
+    "mean_ols": 0.9505006670951843,
+    "mean_location_error_m": 0.37095820903778076,
+    "median_location_error_m": 0.17075113952159882,
+    "p90_location_error_m": 0.4350261390209198
+  },
+  "guarded_fusion": {
+    "ap_0p25m": 0.6798390632747557,
+    "ap_0p3m": 0.792546866383133,
+    "ap_0p5m": 0.9088515009434037,
+    "ap_1p0m": 0.9504982469452123,
+    "ap_ols_0p5": 0.9672072066204739,
+    "mean_ols": 0.9533839821815491,
+    "mean_location_error_m": 0.35688504576683044,
+    "median_location_error_m": 0.1587098389863968,
+    "p90_location_error_m": 0.40789586305618286
+  },
+  "visual_acceptance_rate": 0.6489116260407263,
+  "identity_fallback_rate": 0.3510883739592737,
+  "improved_rate": 0.44036513190891763,
+  "harmed_rate": 0.20854649413180862,
+  "unchanged_rate": 0.3510883739592737
+}

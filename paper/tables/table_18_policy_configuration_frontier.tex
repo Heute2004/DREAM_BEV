@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Policy-backend configuration frontier under an unchanged downstream contract. Route quality is measured on Development, low-light uses the predefined RGB stress, and costs are batch-one component measurements on RTX~5090 rather than end-to-end system FPS.}
+\label{tab:policy-frontier}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Policy configuration & Clean route & Low-light route & Full AP@0.30 & P90 & Parameters & Mean / P95 & Peak reserved \\
+ & macro-F1 & macro-F1 & (Development) & (m) & (M) & (ms/call) & (MB) \\
+\midrule
+Efficient CNN: MobileNetV3-Small & 0.9815 & 0.1106 & 0.7732 & \textbf{0.4260} & 0.938 & \textbf{2.55 / 3.63} & \textbf{40} \\
+High-capacity CNN audit: ResNet-152 & \textbf{0.9997} & 0.1832 & 0.7741 & 0.4273 & 58.183 & 8.43 / 8.56 & 300 \\
+Semantic configuration: InternVL3-1B & 0.9996 & \textbf{0.2997} & \textbf{0.7742} & 0.4273 & 955.789 & 2623.34 / 2721.42 & 3030 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

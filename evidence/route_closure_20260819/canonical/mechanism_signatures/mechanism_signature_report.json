@@ -1,0 +1,357 @@
+{
+  "protocol": "IF-only Development radar-mechanism signature audit",
+  "locked_test_used": false,
+  "frames": 9969,
+  "sequences": 34,
+  "route_counts": {
+    "open_indoor_los": 7,
+    "indoor_clutter": 3,
+    "open_outdoor_weak_return": 8,
+    "outdoor_dry_complex": 3,
+    "outdoor_wet_return": 13
+  },
+  "signature_route_separability": {
+    "protocol": "leave_one_complete_sequence_out_nearest_centroid",
+    "features": [
+      "ra_peak_to_background_db",
+      "mti_peak_to_background_db",
+      "ra_separated_peak_margin_db",
+      "mti_separated_peak_margin_db",
+      "ra_normalized_entropy",
+      "mti_normalized_entropy",
+      "ra_mti_peak_distance_bins",
+      "ra_mti_correlation",
+      "mti_temporal_peak_jump_bins",
+      "ra_diffuse_fraction_6db",
+      "mti_diffuse_fraction_6db"
+    ],
+    "accuracy": 0.7058823529411765,
+    "macro_f1": 0.6755555555555556,
+    "predictions": [
+      {
+        "sequence": "seq_024",
+        "target_route": "indoor_clutter",
+        "predicted_route": "indoor_clutter"
+      },
+      {
+        "sequence": "seq_028",
+        "target_route": "indoor_clutter",
+        "predicted_route": "indoor_clutter"
+      },
+      {
+        "sequence": "seq_033",
+        "target_route": "indoor_clutter",
+        "predicted_route": "indoor_clutter"
+      },
+      {
+        "sequence": "seq_040",
+        "target_route": "open_indoor_los",
+        "predicted_route": "open_indoor_los"
+      },
+      {
+        "sequence": "seq_043",
+        "target_route": "open_indoor_los",
+        "predicted_route": "indoor_clutter"
+      },
+      {
+        "sequence": "seq_046",
+        "target_route": "open_indoor_los",
+        "predicted_route": "open_indoor_los"
+      },
+      {
+        "sequence": "seq_051",
+        "target_route": "open_indoor_los",
+        "predicted_route": "outdoor_dry_complex"
+      },
+      {
+        "sequence": "seq_054",
+        "target_route": "open_indoor_los",
+        "predicted_route": "indoor_clutter"
+      },
+      {
+        "sequence": "seq_057",
+        "target_route": "open_indoor_los",
+        "predicted_route": "open_indoor_los"
+      },
+      {
+        "sequence": "seq_060",
+        "target_route": "open_indoor_los",
+        "predicted_route": "open_indoor_los"
+      },
+      {
+        "sequence": "seq_063",
+        "target_route": "open_outdoor_weak_return",
+        "predicted_route": "open_outdoor_weak_return"
+      },
+      {
+        "sequence": "seq_068",
+        "target_route": "open_outdoor_weak_return",
+        "predicted_route": "open_outdoor_weak_return"
+      },
+      {
+        "sequence": "seq_085",
+        "target_route": "open_outdoor_weak_return",
+        "predicted_route": "open_outdoor_weak_return"
+      },
+      {
+        "sequence": "seq_088",
+        "target_route": "open_outdoor_weak_return",
+        "predicted_route": "open_outdoor_weak_return"
+      },
+      {
+        "sequence": "seq_091",
+        "target_route": "open_outdoor_weak_return",
+        "predicted_route": "open_outdoor_weak_return"
+      },
+      {
+        "sequence": "seq_094",
+        "target_route": "open_outdoor_weak_return",
+        "predicted_route": "open_outdoor_weak_return"
+      },
+      {
+        "sequence": "seq_099",
+        "target_route": "open_outdoor_weak_return",
+        "predicted_route": "outdoor_dry_complex"
+      },
+      {
+        "sequence": "seq_103",
+        "target_route": "open_outdoor_weak_return",
+        "predicted_route": "open_outdoor_weak_return"
+      },
+      {
+        "sequence": "seq_105",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_wet_return"
+      },
+      {
+        "sequence": "seq_106",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_dry_complex"
+      },
+      {
+        "sequence": "seq_109",
+        "target_route": "outdoor_dry_complex",
+        "predicted_route": "open_indoor_los"
+      },
+      {
+        "sequence": "seq_117",
+        "target_route": "outdoor_dry_complex",
+        "predicted_route": "outdoor_dry_complex"
+      },
+      {
+        "sequence": "seq_121",
+        "target_route": "outdoor_dry_complex",
+        "predicted_route": "outdoor_dry_complex"
+      },
+      {
+        "sequence": "seq_125",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_wet_return"
+      },
+      {
+        "sequence": "seq_128",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_wet_return"
+      },
+      {
+        "sequence": "seq_131",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_wet_return"
+      },
+      {
+        "sequence": "seq_134",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_wet_return"
+      },
+      {
+        "sequence": "seq_137",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_wet_return"
+      },
+      {
+        "sequence": "seq_140",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "indoor_clutter"
+      },
+      {
+        "sequence": "seq_143",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "open_indoor_los"
+      },
+      {
+        "sequence": "seq_146",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "open_indoor_los"
+      },
+      {
+        "sequence": "seq_149",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_dry_complex"
+      },
+      {
+        "sequence": "seq_152",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_wet_return"
+      },
+      {
+        "sequence": "seq_155",
+        "target_route": "outdoor_wet_return",
+        "predicted_route": "outdoor_wet_return"
+      }
+    ]
+  },
+  "severity_specialist_relationship": {
+    "overall_spearman_score_vs_specialist_advantage": 0.10129870129870129,
+    "routes": {
+      "open_indoor_los": {
+        "sequences": 7,
+        "spearman_score_vs_specialist_advantage": -0.14285714285714288,
+        "tertiles": [
+          {
+            "level": "low",
+            "sequences": 3,
+            "mean_score": 0.14853914680595853,
+            "mean_specialist_advantage_m": 0.012165512832247873,
+            "mean_hit30_advantage": 0.014166666666666666
+          },
+          {
+            "level": "middle",
+            "sequences": 2,
+            "mean_score": 0.2662467733188145,
+            "mean_specialist_advantage_m": 0.018318110113809984,
+            "mean_hit30_advantage": 0.024583333333333332
+          },
+          {
+            "level": "high",
+            "sequences": 2,
+            "mean_score": 0.41234656510627943,
+            "mean_specialist_advantage_m": 0.012199174051519539,
+            "mean_hit30_advantage": 0.01625
+          }
+        ]
+      },
+      "indoor_clutter": {
+        "sequences": 3,
+        "spearman_score_vs_specialist_advantage": 1.0,
+        "tertiles": [
+          {
+            "level": "low",
+            "sequences": 1,
+            "mean_score": -0.10616471778465325,
+            "mean_specialist_advantage_m": -0.00595557512112372,
+            "mean_hit30_advantage": 0.010833333333333334
+          },
+          {
+            "level": "middle",
+            "sequences": 1,
+            "mean_score": 0.012861980762515577,
+            "mean_specialist_advantage_m": 0.007989157503127025,
+            "mean_hit30_advantage": 0.004166666666666667
+          },
+          {
+            "level": "high",
+            "sequences": 1,
+            "mean_score": 0.09684307921241984,
+            "mean_specialist_advantage_m": 0.017107321950890757,
+            "mean_hit30_advantage": 0.014166666666666666
+          }
+        ]
+      },
+      "open_outdoor_weak_return": {
+        "sequences": 8,
+        "spearman_score_vs_specialist_advantage": 0.4761904761904762,
+        "tertiles": [
+          {
+            "level": "low",
+            "sequences": 3,
+            "mean_score": -0.3772588679285083,
+            "mean_specialist_advantage_m": -0.03905302402072418,
+            "mean_hit30_advantage": 0.013112302458069871
+          },
+          {
+            "level": "middle",
+            "sequences": 3,
+            "mean_score": -0.12180036757205366,
+            "mean_specialist_advantage_m": -0.03738590980048776,
+            "mean_hit30_advantage": 0.046627543035993736
+          },
+          {
+            "level": "high",
+            "sequences": 2,
+            "mean_score": 0.2320616574138249,
+            "mean_specialist_advantage_m": 0.036333093699588016,
+            "mean_hit30_advantage": 0.06432659932659933
+          }
+        ]
+      },
+      "outdoor_dry_complex": {
+        "sequences": 3,
+        "spearman_score_vs_specialist_advantage": 0.5,
+        "tertiles": [
+          {
+            "level": "low",
+            "sequences": 1,
+            "mean_score": -0.6394173693175454,
+            "mean_specialist_advantage_m": 0.00557961873654979,
+            "mean_hit30_advantage": 0.0175
+          },
+          {
+            "level": "middle",
+            "sequences": 1,
+            "mean_score": 0.43450707470039474,
+            "mean_specialist_advantage_m": 0.0016932601923871366,
+            "mean_hit30_advantage": -0.014166666666666666
+          },
+          {
+            "level": "high",
+            "sequences": 1,
+            "mean_score": 1.2243256293751295,
+            "mean_specialist_advantage_m": 0.07159799027092416,
+            "mean_hit30_advantage": 0.04666666666666667
+          }
+        ]
+      },
+      "outdoor_wet_return": {
+        "sequences": 13,
+        "spearman_score_vs_specialist_advantage": 0.06593406593406594,
+        "tertiles": [
+          {
+            "level": "low",
+            "sequences": 5,
+            "mean_score": -0.17905521503067914,
+            "mean_specialist_advantage_m": -0.042958366688564335,
+            "mean_hit30_advantage": -0.003666666666666668
+          },
+          {
+            "level": "middle",
+            "sequences": 4,
+            "mean_score": 0.6944434212969092,
+            "mean_specialist_advantage_m": 0.01636629174423306,
+            "mean_hit30_advantage": 0.005208333333333331
+          },
+          {
+            "level": "high",
+            "sequences": 4,
+            "mean_score": 1.5498926487350473,
+            "mean_specialist_advantage_m": -0.12769157765047973,
+            "mean_hit30_advantage": 0.043607414448669196
+          }
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "route signatures are descriptive frozen Development diagnostics",
+    "small route strata make within-route correlations exploratory",
+    "the audit does not claim discovery of exhaustive physical failure mechanisms"
+  ],
+  "source_sha256": {
+    "manifest": "834185d86a1cff6f86271fee910540f600ac5e496ebb9e303f39af832fa02047",
+    "sequence_ledger": "08bcc9ed637665ce17c4d3e0ad96821c91a7cafc2c40afaa71aefa5cf80c5032",
+    "forced_open_indoor_los": "6d9ffe46be9b178317a99840047234fc911f33aed4e545c6afd646b3df5eee90",
+    "forced_indoor_clutter": "42b32c71e39f7409cca62961de90cea19ca530c4209e3052cf05c52344949dd4",
+    "forced_open_outdoor_weak_return": "de51530f0f07e5d509e06499163250a70e687d41811b282d82e2211f19a62173",
+    "forced_outdoor_dry_complex": "c7288599878c1f2d2146d73f2933d33b21263960f9077ce03ae8fc420c854937",
+    "forced_outdoor_wet_return": "7fe717f5935493806f63b2a93c66f0a931ce66b918471949db732e03e492de95"
+  }
+}
