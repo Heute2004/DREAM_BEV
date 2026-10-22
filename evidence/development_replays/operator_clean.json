@@ -1,0 +1,94 @@
+{
+  "record_type": "provenance reconstruction from archived metadata and source",
+  "split": "Development Val",
+  "frames": 9969,
+  "new_training": false,
+  "new_inference": false,
+  "locked_test_access": false,
+  "replay_entry": {
+    "path": "scripts/replay_causal_cross_modal_guard.py",
+    "sha256": "1027232cab4ebec368074d3efa96f30fdba3b61f67eb5a0f8c3ddbc25ddf6191"
+  },
+  "state_initialization": {
+    "basis": "released implementation; not a recovered runtime trace",
+    "ordering": "sequence then strictly increasing frame_id",
+    "guard": "fresh object per replay; empty per-sequence state; EMA starts at 0",
+    "ineligible_frames": "do not update EMA",
+    "policy": "learned admission loaded unchanged; warm-up is supplied by the trace",
+    "upstream_temporal_model_state": null
+  },
+  "replay_checkpoint": {
+    "loaded": false,
+    "reason": "coordinates and scores are read from cached audits"
+  },
+  "upstream_candidate_checkpoint": {
+    "sha256": null,
+    "status": "not bound by this replay receipt",
+    "related_training_checkpoint_sha256": "bb6a5e241319ecdeaff0f9082a71da923831332f4ce2c8968421fc7fb29bd624",
+    "note": "Related archive identity is not proof that this cache used that checkpoint."
+  },
+  "upstream_cache_generation_command": null,
+  "guard_configuration": {
+    "ema_alpha": 0.1,
+    "ema_threshold": 0.5,
+    "instantaneous_threshold": null,
+    "admission_mode": "learned",
+    "warmup_frames": 32
+  },
+  "implementation_bindings": {
+    "src/rvfusion/causal_guard_replay.py": "5489ef15163fc0ad9da788cc78ccbae48bfb97f6fd713699f750183ba5bd4421",
+    "src/rvfusion/cross_modal_consistency.py": "7a9bed1706036abc56ab224f8aa4bd65f702f1119871853264516e7fda65770e",
+    "src/radar_bev/evaluation.py": "0459603638f0d7c02852cb898ee643d89b8a367ab040339cc758da847ff5158a"
+  },
+  "cause_of_cache_difference": "not isolated; do not interchange clean metrics",
+  "id": "operator_clean",
+  "report": {
+    "path": "evidence/active_development_contract/operator/operator_study_report.json",
+    "sha256": "29104f33ae6e59cf3121312f08824c71c9b780a246843df5f6bf7370e1d12a99"
+  },
+  "launcher": "scripts/resume_posterior_operator_guard_replays_dev.sh",
+  "replay_arguments": [
+    "--policy-causal-replay",
+    "<policy_trace>",
+    "--evidence-audit",
+    "<candidate_audit>"
+  ],
+  "input_bindings": [
+    {
+      "role": "policy_trace",
+      "artifact": "canonical_dev_guard_clean_tau05/guarded/causal_guard_replay.csv",
+      "sha256": "44a98216a7c74e59c3b26f33fe080553c125992c20646f3be49f5d72230448bd",
+      "hash_basis": "archived FROZEN_INPUT_AND_RESULT_SHA256SUMS.txt",
+      "distribution": "on_request"
+    },
+    {
+      "role": "candidate_audit",
+      "artifact": "probe_posterior_frozen_evaluation_r4/acceptance_audit.csv",
+      "sha256": "797b5e20e3d997d16ed2e8311423db1e0474a961bb25f67c80cafc401432020e",
+      "hash_basis": "archived FROZEN_INPUT_AND_RESULT_SHA256SUMS.txt",
+      "distribution": "on_request"
+    }
+  ],
+  "metrics": {
+    "guard_off": {
+      "frames": 9969,
+      "ap_0p25m": 0.6812867347845613,
+      "ap_0p3m": 0.7917502493745072,
+      "ap_0p5m": 0.9055483598770712,
+      "mean_location_error_m": 0.356486976146698,
+      "p90_location_error_m": 0.4156237840652466,
+      "visual_acceptance_rate": 0.6489116260407263,
+      "harmed_rate": 0.2683318286688735
+    },
+    "protected": {
+      "frames": 9969,
+      "ap_0p25m": 0.6604518348363433,
+      "ap_0p3m": 0.7742040499669717,
+      "ap_0p5m": 0.9055388941243744,
+      "mean_location_error_m": 0.36315837502479553,
+      "p90_location_error_m": 0.42730915546417236,
+      "visual_acceptance_rate": 0.35469956866285485,
+      "harmed_rate": 0.13391513692446586
+    }
+  }
+}

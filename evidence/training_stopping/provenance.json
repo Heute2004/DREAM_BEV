@@ -1,0 +1,108 @@
+{
+  "scope": "aggregate archived Development histories; no model execution",
+  "histories": [
+    {
+      "model": "DREAM-BEV anchor",
+      "original_history_name": "dream-bev_anchor_history.json",
+      "sha256": "0143c16a21bbc06780c14e222c71cf9052118ead00a7db02e18da6b982327db2",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "CLOR",
+      "original_history_name": "clor_history.json",
+      "sha256": "c24b22ffdd623552e75caa4a367453a7a4f22274dc6a113e5cccb3aba1634155",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "TECS",
+      "original_history_name": "tecs_history.json",
+      "sha256": "278d11f520aba6027394e4a6eb98c1ae14a0522a88b28c5f075e20d477cb5877",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "LTGE-CEN",
+      "original_history_name": "ltge-cen_history.json",
+      "sha256": "ce08896b9eed6247141e616212a8b943e4827d7d09200c58314e05205d25513b",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "GG-SRRE",
+      "original_history_name": "gg-srre_history.json",
+      "sha256": "c503848d7317f9fa3693ef99c9ef8791f20d48655ac1daf5d371ec7ac766fd01",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "RV-BearingNet",
+      "original_history_name": "rv-bearingnet_history.json",
+      "sha256": "88843f50d312f1f87871b97b6cd8befdeddcac8a4670900b0e67a186e9ab62a6",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "RVFusion candidate stage",
+      "original_history_name": "rvfusion_candidate_stage_history.json",
+      "sha256": "8800fe1900955274573802c2b0b6081d2a1feed98bcfefc4ee33809caed0ffec",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "RC-ROSNet",
+      "original_history_name": "rc-rosnet_history.json",
+      "sha256": "7b75153ae3662ca03286e87bed3636ea9d7f1ceac5473645ec784cd5f8063ad9",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "CRN",
+      "original_history_name": "crn_history.json",
+      "sha256": "e5b85ce94a5323d11aeea8a1f10035cd7be30d3a7ca938d3bf9d66713f71c2e4",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "RCBEVDet",
+      "original_history_name": "rcbevdet_history.json",
+      "sha256": "27d904d15ddfdfeb9871c36bc3a3d886d75e9555175c34d81fc7d8ab1bff13b3",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "Universal active",
+      "original_history_name": "universal_active_history.json",
+      "sha256": "b03d073dc6233f33a0a51f68baab0dae645599bcbfc70265c76c17d2ea3155a4",
+      "distribution": "local audit; on request"
+    },
+    {
+      "model": "Universal bank",
+      "original_history_name": "universal_bank_history.json",
+      "sha256": "884b7b705eb0eccc48a4c3cee4e14c4212953ab6c467f5c8514c517e3d48074f",
+      "distribution": "local audit; on request"
+    }
+  ],
+  "training_source_snapshots": [
+    {
+      "source_name": "train_external_rvfusion_baselines.py",
+      "sha256": "51296cd16506578c37e60c5ffb73ebfb27ed7a3528a4b143e570b58844a6db69",
+      "distribution": "local audit; on request"
+    },
+    {
+      "source_name": "train_a6_lattice_rvfusion.py",
+      "sha256": "420bed77cbe4a6174a9e5e9aff2306a6a08ac8f116ec45b81f511aa37a4d1565",
+      "distribution": "local audit; on request"
+    },
+    {
+      "source_name": "train_rv_bearing.py",
+      "sha256": "0d7685b16baf8dc19a2d9ec15d0962d8086a95c849076f231415bb89a3066cde",
+      "distribution": "local audit; on request"
+    },
+    {
+      "source_name": "train_experts.py",
+      "sha256": "a0c67e3ecd3545350c0442ae1796a5dbd09c13aa897b7e4e2b25b15b3c73a0d9",
+      "distribution": "local audit; on request"
+    },
+    {
+      "source_name": "train_universal_expert.py",
+      "sha256": "f2886e0029f253822a046a5519332678b96b79886ebdbda3dc0873501085a2a6",
+      "distribution": "local audit; on request"
+    }
+  ],
+  "fusion_checkpoint_sha256": "bb6a5e241319ecdeaff0f9082a71da923831332f4ce2c8968421fc7fb29bd624",
+  "convergence_definition": "No improvement in the archived module-specific Development selection criterion for the stated patience.",
+  "new_training": false,
+  "locked_test_access": false
+}

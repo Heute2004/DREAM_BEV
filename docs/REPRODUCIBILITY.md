@@ -85,8 +85,11 @@ The three public fusion controls use the same frozen expert-radar anchor, causal
 RGB evidence cache, sequence manifest, and evaluator as the proposed fusion
 module. They are task adaptations of the pinned public fusion cores, not original
 multi-camera or 3-D benchmark reproductions. Clone each official repository at the
-commit recorded by `rvfusion.public_official_fusion`, then run the fixed four-epoch
-adaptation on Train and select the frozen checkpoint by Development AP@0.30:
+commit recorded by `rvfusion.public_official_fusion`. Train on Train and select
+the frozen checkpoint by Development AP@0.30. The archived heads selected epoch
+1 and ended after three consecutive non-improving epochs, at epoch 4. The
+module-specific histories and stopping rules are in
+[TRAINING_STOPPING.md](TRAINING_STOPPING.md):
 
 ```powershell
 python scripts/train_external_rvfusion_baselines.py --baseline rcrosnet --public-source-root <official-source> ...
@@ -98,8 +101,8 @@ Use `scripts/evaluate_external_rvfusion_baselines.py` only for frozen
 Development replays. The evaluator records the official-source commit, checkpoint
 hash, input cache, and split and rejects existing output directories. These controls
 are not used to choose the proposed model or to reopen the locked test. The
-four-epoch study is contextual adaptation evidence; it does not establish full
-convergence or optimization parity with the separately trained proposed hierarchy.
+study is contextual adaptation evidence. Reaching the recorded patience does
+not establish equal optimizer-step counts or optimization parity across models.
 
 ## Source-backed public radar controls
 
@@ -156,6 +159,8 @@ wraps the same single-point evaluator and the frozen causal compositor. It
 evaluates bearing bias at 1--6 degrees, temporal lag at 2, 4, and 8 frames,
 and seeded visual-evidence dropout at 25, 50, and 75 percent. All three axes
 reuse the canonical clean Development replay as their zero-severity point.
+This zero-severity cache is not the separate common-input operator cache;
+see [DEVELOPMENT_REPLAYS.md](DEVELOPMENT_REPLAYS.md) for both records.
 The batch runner requires explicit frozen paths, rejects locked-test output
 paths, writes no checkpoint, and emits paired guard-off/protected metrics.
 `scripts/summarize_visual_conflict_sweep.py` verifies the 9,969-frame scope,

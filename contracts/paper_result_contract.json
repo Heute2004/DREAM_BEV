@@ -1,6 +1,6 @@
 {
   "paper_title_short": "DREAM-BEV Information Fusion",
-  "paper_pdf_sha256": "d12b21e4af4c795d2838f2d19fe57ef3202e4ad945c37581e748c2a14c2531aa",
+  "paper_pdf_sha256": "c246dbde9b809f099ab258246ded9b130f6bd06f75e86d39a6fdf50c98ba39f2",
   "coordinate_contract": "preserve Radar-H forward coordinate; permit bounded lateral RGB evidence",
   "sequence_contract": {
     "train_sequences": 87,

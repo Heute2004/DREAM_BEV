@@ -1,0 +1,13 @@
+model,metric,direction,patience,best_epoch,stopped_epoch,best_value,terminal_value,trailing_non_improving
+DREAM-BEV anchor,eval_ap_0p5m,max,3,3,6,0.8988958150074109,0.8961459605007334,3
+CLOR,eval_ap_0p3m,max,4,6,10,0.9723464097853873,0.9700885101892287,4
+TECS,eval_ap_0p3m,max,4,3,7,0.9570302646042644,0.9455979267709442,4
+LTGE-CEN,eval_ap_0p3m,max,4,1,5,0.7859752492445597,0.7384855566581292,4
+GG-SRRE,eval_ap_0p3m,max,4,3,7,0.6354715307306658,0.6142940324687998,4
+RV-BearingNet,selection_score,min,4,7,11,0.24135998487472535,0.24421937942504884,4
+RVFusion candidate stage,checkpoint_guard.phase_score,max,3,1,4,0.7594281725166554,0.7571339730140545,3
+RC-ROSNet,development.ap_0p3m,max,3,1,4,0.7549366647859179,0.751736874096847,3
+CRN,development.ap_0p3m,max,3,1,4,0.7420715445861383,0.7133559713011144,3
+RCBEVDet,development.ap_0p3m,max,3,1,4,0.7320983181306051,0.7259297750486923,3
+Universal active,development.ap_0p3m,max,4,5,9,0.7466629859890392,0.7454695034939823,4
+Universal bank,development.ap_0p3m,max,4,7,11,0.7535190652773338,0.7532112164390921,4

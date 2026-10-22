@@ -1,9 +1,9 @@
 {
   "paper_title": "DREAM-BEV: Condition-routed radar-vision fusion for human localization",
-  "main_pdf_sha256": "d12b21e4af4c795d2838f2d19fe57ef3202e4ad945c37581e748c2a14c2531aa",
-  "supplement_pdf_sha256": "5097580f5bdd440d1fe974eba55ad37800de3ccf34c27a377f194d9199b955f0",
+  "main_pdf_sha256": "c246dbde9b809f099ab258246ded9b130f6bd06f75e86d39a6fdf50c98ba39f2",
+  "supplement_pdf_sha256": "6350d13c071329d084940936fc5db4e73d70f238717bcfa11f9a3adb7b3cb022",
   "main_pages": 16,
-  "supplement_pages": 8,
+  "supplement_pages": 7,
   "paper_pdfs_in_repository": false,
   "readme_scope": "Source, protocols, selected numerical evidence, and table exports. Private data and model binaries are external prerequisites.",
   "implementation_bindings": [
@@ -58,5 +58,7 @@
     "Added public-dataset source closure and CLI launcher without changing model execution.",
     "Updated manuscript identity and full perturbation-curve data; no training or Locked Test inference was run."
   ],
-  "compact_core_source_sha256": "9608baf80e7467b282e9bf91afcd8d923c72062577020e481718649125372bca"
+  "compact_core_source_sha256": "9608baf80e7467b282e9bf91afcd8d923c72062577020e481718649125372bca",
+  "dream_expansion": "Deep Radar Experts for Adaptive Multimodal BEV Localization",
+  "bev_expansion": "bird's-eye view"
 }

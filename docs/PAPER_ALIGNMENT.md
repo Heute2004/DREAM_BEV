@@ -28,11 +28,16 @@ between datasets.
 The common-input operator study and full perturbation sweep are distinct frozen
 evaluations. Their clean values must not be interchanged. The full-sweep 50%
 dropout point is used in Figure 6, rather than an earlier single-point diagnostic.
+The two source chains, replay entries, state initialization, and unresolved
+upstream bindings are listed in [DEVELOPMENT_REPLAYS.md](DEVELOPMENT_REPLAYS.md).
+Training selection histories and observed stopping counts are summarized in
+[TRAINING_STOPPING.md](TRAINING_STOPPING.md).
 
 The encoder model differs from its audit copy only in an RGB input-error message
 and trailing whitespace. The release restores the archived encoder loader's
 explicit sequence partitions and adds a validator for the packaged manifest.
 This fixes a packaging omission; no trained architecture, loss, or weight changes.
 
-The name DREAM-BEV is retained without an invented expanded acronym: an
-authoritative expansion was not found in the inspected manuscript or code.
+DREAM denotes Deep Radar Experts for Adaptive Multimodal BEV Localization.
+BEV means bird's-eye view. The manuscript identity and page counts are recorded
+in `contracts/paper_binding.json`.

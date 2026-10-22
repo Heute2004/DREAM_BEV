@@ -1,0 +1,27 @@
+{
+  "main_pdf_sha256": "c246dbde9b809f099ab258246ded9b130f6bd06f75e86d39a6fdf50c98ba39f2",
+  "supplement_pdf_sha256": "6350d13c071329d084940936fc5db4e73d70f238717bcfa11f9a3adb7b3cb022",
+  "tables": {
+    "main_allocation.tex": "5f204e971d44affe00b7ee6bcba3da020851b58c89bf59d83fe264243a4e5f9e",
+    "main_cruw.tex": "720cffcc3c4d2d305142e3587272a1b296ca3e6772269c7f6906140d6202fb93",
+    "main_expert_operations.tex": "8e87c2202c671566088e87f846b9d46d237e741115bbbe386322c66f58a1fff1",
+    "main_locked.tex": "777bd13815633659da96905debe3812536e9f6c998dfd5839713bb5524cc267f",
+    "main_operator.tex": "7ceee00b713a5b2c5d1a3872a9ea26591fc796f1cac7ce730c0736561d322cd1",
+    "main_policy.tex": "648013966825fef473e884864bb61ae90be4584e437dad48bd3695302f4732cd",
+    "main_protocol.tex": "40abc3a865e50e505f7e1c5a839de14e92dc254b926a0f6812edb1d087129a38",
+    "main_public_fusion.tex": "407d776f51862fb404115086bf07d7544c6e867a0d3d269d911ccdaa2601e584",
+    "supp_policy_contract_audit.tex": "3fd28e77c5ac7764192f4dd5df82e23bad289141e2c9d9157ccda44ebb6df6d5",
+    "supp_training_stops.tex": "ce5f7e7cc9651d78422519cdcb55c65ac7787f02f2be36c946dc0b76ca4545a4",
+    "supp_visual_conflict.tex": "35a152962ed4716d0acc59917608240579e9418f6dfeaa54e04b9ad2d29adf66",
+    "table_00b_reference_provenance.tex": "7f677eab13e0e50d7984093e42fa82adf5a88d1a212052ba009ef745234cd79e",
+    "table_02_backbone_context.tex": "9d58039839e78482de694a26a1fde0f669a7f06394750730ce00f0f549b178b7",
+    "table_03_route_experts.tex": "89578194b02c9d741e34b6974261897ba86f0b5b3208f3a40d2c6e771c0bb6b5",
+    "table_06_routewise_locked_test.tex": "688d9dbfae88b2021d16ee2a2c0ca4066efb45cec57a4a57de83aade5b42f024",
+    "table_11_posthoc_locked_fusion.tex": "df1cdb120494cf53d6a5af5395dfa17817305be73446aa21635bac1249c176b0",
+    "table_12_public_metric_depth_control.tex": "8d1d2a0503e9b8064003da6ad3e64e30ca34390a0747a1bcb009a8fde208ef1f",
+    "table_14_carrada_external_transfer.tex": "6e2468fcf821a7366cf211b2887f55a40fa027db81c3966867a83dfa99452645",
+    "table_17_route_counterfactual.tex": "dcaa4da52fcb14f49d467c0cf9dc95ba6263f2a6abd78ba5ac9b2f22a81e0046",
+    "table_18_policy_configuration_frontier.tex": "884f4da19aac58429b78a38b3dafef8c13ea0e7033f893e8f2c9b5e8f9036099",
+    "table_21_route_closure.tex": "1e710eaf7c92afd25d53bcdf0a4dc9e8d7ae3418b8f4caf99297c67b6e69ccb6"
+  }
+}

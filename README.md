@@ -2,6 +2,9 @@
 
 Code for **DREAM-BEV: Condition-routed radar-vision fusion for human localization**.
 
+DREAM expands to **Deep Radar Experts for Adaptive Multimodal BEV Localization**;
+BEV denotes bird's-eye view.
+
 DREAM-BEV selects a radar recovery expert from scene conditions, proposes a
 bounded visual correction, and withdraws that correction when persistent
 cross-modal conflict is detected. RGB does not change the radar-derived forward
@@ -51,6 +54,8 @@ separate upstream environment; see [third_party/InternVL.md](third_party/InternV
 | Public-data adaptations | [external/README.md](external/README.md) |
 | Public source identities | [THIRD_PARTY.md](THIRD_PARTY.md) |
 | Evidence index | [docs/EVIDENCE_INDEX.md](docs/EVIDENCE_INDEX.md) |
+| Training selection and stopping | [docs/TRAINING_STOPPING.md](docs/TRAINING_STOPPING.md) |
+| Two Development replay records | [docs/DEVELOPMENT_REPLAYS.md](docs/DEVELOPMENT_REPLAYS.md) |
 
 The private dataset uses 87 Train, 34 Development, and eight Locked Test
 sequences. Radar input is causal 16-frame RA/RA-MTI; visual evidence uses an

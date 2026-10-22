@@ -1,0 +1,26 @@
+\par\smallskip\noindent
+\begin{minipage}{\columnwidth}
+\centering\footnotesize
+\captionsetup{hypcap=false}
+\captionof{table}{Selected points from the Development conflict replay used in the main sweep figure. Each off/on pair shares its cached evidence and checkpoints. The clean baseline is distinct from the operator replay, as explained in Section~S7. Expert-radar AP@0.30 is 0.7617; acceptance and harm use all 9,969 frames.}
+\label{tab:visual-conflict}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llrrrr@{}}
+\toprule
+\shortstack[l]{Visual\\perturbation} & Guard & \shortstack{AP@\\0.30} & \shortstack{P90\\(m)} & \shortstack{Accept\\(\%)} & \shortstack{Harm\\(\%)}\\
+\midrule
+Clean replay &Off&0.7925&0.4079&64.89&20.85\\
+ &On&0.7752&0.4241&35.47&10.47\\
+\addlinespace
+\shortstack[l]{$+5^\circ$ bearing\\bias} &Off&0.5976&0.4923&64.89&46.09\\
+ &On&0.7565&0.4367&2.46&1.48\\
+\addlinespace
+Eight-frame lag &Off&0.7396&0.4347&64.89&32.12\\
+ &On&0.7648&0.4312&20.79&8.96\\
+\addlinespace
+\shortstack[l]{50\% frame-evidence\\dropout} &Off&0.7848&0.4156&64.89&27.27\\
+ &On&0.7759&0.4235&42.07&16.48\\
+\bottomrule
+\end{tabular*}
+\end{minipage}
+\par\smallskip

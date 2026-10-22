@@ -16,7 +16,9 @@ Directories not listed here are not part of the paper evidence contract.
 | Route allocation closure | `evidence/route_closure_20260819/canonical/route_allocation_final/route_allocation_report.json` | Learned, fixed, random, static-mixture, and ledger-matched routing controls. |
 | Universal expert controls | `evidence/route_closure_20260819/canonical/universal_summary_seed3407/universal_expert_report.json` | Heterogeneous routed pool versus active-capacity and bank-capacity universal experts. |
 | Route observability and switching | `evidence/route_closure_20260819/canonical/mechanism_signatures/mechanism_signature_report.json`, `evidence/route_closure_20260819/canonical/route_transitions/evaluation/route_transition_report.json` | Descriptive radar-signature separability and no-reset scheduled replacement diagnostics. |
-| Public fusion cores | `evidence/public_fusion_fixed_budget/official_fusion_summary.json` | Fixed four-epoch contextual task adaptations only; no convergence-parity claim. |
+| Public fusion cores | `evidence/public_fusion_fixed_budget/official_fusion_summary.json` | Contextual task adaptations; archived terminal epoch 4 follows three non-improving epochs. No optimizer-budget parity claim. |
+| Training histories | `evidence/training_stopping/epoch_metrics.csv`, `stopping_summary.csv`, `provenance.json` | Module-specific selection curves and observed stopping counts from 12 archived runs. |
+| Development replay provenance | `evidence/development_replays/operator_clean.json`, `stress_clean.json` | Separate input chains and state rules; missing upstream runtime fields remain explicit. |
 | CRUW public transfer | `evidence/public_sequence_transfer/cruw/protected/`, `evidence/public_sequence_transfer/cruw/public_baselines/` | Paired public-sequence fusion transfer; not an official CRUW test result. |
 | CARRADA public diagnostic | `evidence/public_sequence_transfer/carrada/frozen_comparison.json` | Public-sequence radar-representation diagnostic; not an official benchmark result. |
 

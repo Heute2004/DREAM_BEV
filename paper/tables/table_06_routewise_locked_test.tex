@@ -1,18 +1,18 @@
 \begin{table*}[t]
 \centering
 \small
-\caption{Locked outcomes grouped post hoc by the frozen RGB policy reference. RVFusion uses the same Train-calibrated protection as the aggregate result; route references are not read by the policy normalizer or evaluator.}
+\caption{Locked outcomes grouped by the acquisition conditions in the main split table. Sequence IDs omit the \texttt{seq\_} prefix. All entries summarize the same frozen predictions used for the aggregate result; grouping does not change routing or fusion.}
 \label{tab:route-test}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{lrrrrrr}
+\begin{tabular}{llrrrrrr}
 \toprule
-Route & Frames & Radar AP@0.30 & Fusion AP@0.30 & Gain (pp) & Radar P90 (m) & Fusion P90 (m) \\
+Condition & Sequences & Frames & Radar AP@0.30 & Fusion AP@0.30 & Gain (pp) & Radar P90 (m) & Fusion P90 (m) \\
 \midrule
-Indoor clutter & 300 & 0.9070 & 0.9187 & +1.17 & 0.2548 & 0.2511 \\
-Open-indoor LOS & 600 & 0.9426 & 0.9489 & +0.63 & 0.2518 & 0.2430 \\
-Open-outdoor weak-return & 600 & 0.6692 & 0.7152 & +4.60 & 0.4206 & 0.3772 \\
-Outdoor dry-complex & 600 & 0.7367 & 0.8238 & +8.71 & 0.3190 & 0.2944 \\
-Outdoor wet-return & 300 & 0.8093 & 0.8093 & +0.00 & 0.3037 & 0.3037 \\
+Indoor clutter & 032 & 300 & 0.9070 & 0.9187 & +1.17 & 0.2548 & 0.2511 \\
+Open-indoor LOS & 041, 052 & 600 & 0.9426 & 0.9489 & +0.63 & 0.2518 & 0.2430 \\
+Open-outdoor weak-return & 069, 102 & 600 & 0.6692 & 0.7152 & +4.60 & 0.4206 & 0.3772 \\
+Outdoor dry-complex & 118 & 300 & 0.6951 & 0.8242 & +12.92 & 0.3267 & 0.2984 \\
+Outdoor wet-return & 132, 153 & 600 & 0.7957 & 0.8167 & +2.10 & 0.3054 & 0.3000 \\
 \bottomrule
 \end{tabular}}
 \end{table*}
